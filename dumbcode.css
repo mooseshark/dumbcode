@@ -1,0 +1,205 @@
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+/*
+ * nav-link coloring
+ */
+.nav-link {
+  color: #ffffff
+}
+
+.nav-link:hover {
+  color: #ffabab;
+  opacity: 0.75
+}
+
+.fa-twitter {
+  color: #ffffff
+}
+
+.fa-twitter:hover {
+  color: #ffabab;
+  opacity: 0.75
+}
+
+/*
+ * button outline
+ */
+.btn-outline-read {
+  color: #fff;
+  background-color: #a79aff;
+  border-color: #7b67ff;
+}
+
+.btn-outline-read:hover {
+  color: #fff;
+  background-color: #ffabab;
+  border-color: #ff9d9d;
+  box-shadow: 0 0 0 0.2rem #ffabab;
+}
+
+.btn-outline-read:focus, .btn-outline-read.focus {
+  background-color: #ffabab;
+  border-color: #ff9d9d;
+  box-shadow: 0 0 0 0.2rem #ffabab;
+}
+
+.btn-outline-read.disabled, .btn-outline-read:disabled {
+  color: #343a40;
+  background-color: transparent;
+}
+
+.btn-outline-read:not(:disabled):not(.disabled):active, .btn-outline-read:not(:disabled):not(.disabled).active,
+.show > .btn-outline-read.dropdown-toggle {
+  color: #fff;
+  background-color: #ff9d9d;
+  border-color: #ffabab;
+}
+
+.btn-outline-read:not(:disabled):not(.disabled):active:focus, .btn-outline-read:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-read.dropdown-toggle:focus {
+  background-color: #ffabab;
+  border-color: #ff9d9d;
+  box-shadow: 0 0 0 0.2rem #a79aff;
+}
+
+/*
+ * Sub Footer
+ */
+.sub-footer {
+  background-color: #7b67ff;
+  text-align: center;
+}
+
+.fa-resistance {
+  color: #7b67ff;
+}
+
+.fa-resistance:hover {
+  color: #ffffff;
+}
+
+/*
+ * Tooltip
+ */
+ .tooltip.show {
+   opacity: 0.75;
+ }
+
+ .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+   border-top-color: #d9ffc2;
+   opacity: 0.75;
+ }
+
+ .tooltip-inner {
+   color: #000;
+   font-weight: bold;
+   opacity: 0.75;
+   background-color: #d9ffc2;
+ }
+
+/*
+ * Twitter Icon
+ */
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem
+}
+
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #3da5f;
+    border-radius: 0
+}
+
+.card .card-body {
+    padding: 1.25rem 1.75rem
+}
+
+.card .card-title {
+    color: #000000;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500
+}
+
+.card .card-description {
+    margin-bottom: .875rem;
+    font-weight: 400;
+    color: #76838f
+}
+
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0
+}
+
+.template-demo>.btn {
+    margin-right: 0.5rem !important
+}
+
+.template-demo {
+    margin-top: 0.5rem !important
+}
+
+.btn.btn-rounded {
+    border-radius: 50px
+}
+.btn-outline-twitter {
+    border: 1px solid #2caae1;
+    color: #2caae1
+}
+
+.btn-outline-twitter:hover {
+    background: #2caae1;
+    color: #ffffff
+}
+
+.btn-twitter {
+    background: #2caae1;
+    color: #ffffff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+    background: #1b8dbf;
+    color: #ffffff
+}
