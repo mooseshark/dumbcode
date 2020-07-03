@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bitwise XOR</title>
+	<script type="text/javascript" src="PeachShift.js"></script>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%
+		}
+
+		th {
+			padding: 8px;
+			text-align: center;
+			border: 1px solid #000;
+			background-color: #77dfff;
+		  width: 120px
+		}
+
+
+
+		tr:hover {
+      background-color: #ffff99;
+    }
+
+		tr:nth-child(even):hover {
+			background-color: #ffff99;
+		}
+
+		tr:nth-child(even) {background-color: #77ffdb;}
+
+		.trSolid:hover {
+			background-color: #fff
+		}
+
+		.trSolid:nth-child(even):hover {
+			background-color: #fff
+		}
+
+		.trSolid:nth-child(even) {background-color: #fff;}
+
+		td {
+			border: 1px solid #000;
+			text-align: center
+		}
+
+		[type^="button"] {
+		  float: center;
+			width: 360px;
+			font-weight:bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="test" style="width:933px">
+		<h1 style="text-align:center">Convert String to Another String Using Bitwise XOR Operation</h1>
+
+		<table id="tabBody">
+			<tr id="inputRow" class="trSolid">
+				<td  colspan="6"><label for="ogString"><strong>Initial String:</strong></label>  <input type="text" id="ogString" name="ogString"></td>
+				<td  colspan="6"><label for="convertString"><strong>String to Convert:</strong></label>  <input type="text" id="convertString" name="convertString"></td>
+			</tr>
+			<tr id="submitRow" class="trSolid">
+				<td colspan="12">
+					<input id="submitId" type="button" value="Submit" onclick="submitFields();">
+				</td>
+			</tr>
+			<tr id="stringHeaderRow" class="trSolid" style="display: none;">
+				<td  colspan="6"><h3>Initial String</h3></td>
+				<td  colspan="6"><h3>Converted String</h3></td>
+			</tr>
+			<tr id="stringRow" class="trSolid" style="display: none;">
+				<td id="ogStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+				<td id="covertedStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+			</tr>
+			<tr id="resetRow" class="trSolid" style="display: none;">
+				<td colspan="12"><input id="resetId" type="button" value="Reset" onclick="resetPage();"></td>
+			</tr>
+			<tr id="tableHeaderRow" style="display: none;">
+				<th></th>
+				<th>Initial Character</th>
+				<th>Initial Decimal Value</th>
+				<th>Bitwise XOR of Decimal Values</th>
+				<th>Decimal Value for Convertion</th>
+				<th>Character to Convert</th>
+				<th>Initial Binary Value</th>
+				<th>Binary Value for Convertion</th>
+				<th>Bitwise XOR Returned Binary Value</th>
+				<th>Bitwise XOR Returned Decimal Value</th>
+				<th>Bitwise XOR to get Converted Decimal Value</th>
+				<th>Final Converted Character</th>
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>
