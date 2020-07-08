@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="dumbcode.css">
+    <link rel="stylesheet" href="../../dumbcode.css">
+    <link rel="stylesheet" href="peach-shift.css">
 
     <title>Dumb Code</title>
   </head>
@@ -28,13 +29,13 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><b>Posts</b></a>
+            <a class="nav-link" href="../../index.html"><b>Posts</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="purpose.html"><b>Purpose</b></a>
+            <a class="nav-link" href="../../purpose.html"><b>Purpose</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="personality.html"><b>Personality</b></a>
+            <a class="nav-link" href="../../personality.html"><b>Personality</b></a>
           </li>
           <li class="nav-item d-block d-lg-none">
             <a class="nav-link" href="sitemap.html"><b>Site Map</b></a>
@@ -52,54 +53,50 @@
 
     <div class="container">
       <div class="row">
-        <div class="col">
-          </br>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
         <article class="col">
-          <h3><b>Peach Shift</b></h3>
-          <h5><b>Convert String to Another String using Bitwise XOR Operation</b></h5>
-          <h6><b>June 27, 2020</b></h6>
-          <div class="text-center">
-            <img src="posts\peach-shift\images\peach-shift.png" class="img-fluid" alt="Responsive image">
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et tempor enim. Etiam quam eros, facilisis vitae egestas in</p>
-          <div class="text-center">
-            <a class="btn btn-outline-read btn-lg" href="posts\peach-shift\peach-shift.html" role="button">Read More</a>
+      		<h1 class="d-none d-lg-block" style="text-align:center">Convert String to Another String Using Bitwise XOR Operation</h1>
+          <h4 class="d-block d-lg-none" style="text-align:center">Convert String to Another String Using Bitwise XOR Operation</h4>
+          <div class="table-responsive-xl">
+        		<table id="tabBody" >
+        			<tr id="inputRow" class="trSolid">
+        				<td  colspan="6"><label for="ogString"><strong>Initial String:</strong></label>  <input type="text" id="ogString" name="ogString"></td>
+        				<td  colspan="6"><label for="convertString"><strong>String to Convert:</strong></label>  <input type="text" id="convertString" name="convertString"></td>
+        			</tr>
+        			<tr id="submitRow" class="trSolid">
+        				<td colspan="12">
+                  <button type="button" class="btn btn-outline-read btn-lg" id="submitId" value="Submit" onclick="submitFields();">Submit</button>
+        				</td>
+        			</tr>
+        			<tr id="stringHeaderRow" class="trSolid" style="display: none;">
+        				<td  colspan="6"><h3>Initial String</h3></td>
+        				<td  colspan="6"><h3>Converted String</h3></td>
+        			</tr>
+        			<tr id="stringRow" class="trSolid" style="display: none;">
+        				<td id="ogStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+        				<td id="covertedStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+        			</tr>
+        			<tr id="resetRow" class="trSolid" style="display: none;">
+        				<td colspan="12">
+                  <button type="button" class="btn btn-outline-read btn-lg" id="resetId" value="Reset" onclick="resetPage();">Reset</button>
+                </td>
+        			</tr>
+        			<tr id="tableHeaderRow" style="display: none;">
+        				<th></th>
+        				<th>Initial Character</th>
+        				<th>Initial Decimal Value</th>
+        				<th>Bitwise XOR of Decimal Values</th>
+        				<th>Decimal Value for Convertion</th>
+        				<th>Character to Convert</th>
+        				<th>Initial Binary Value</th>
+        				<th>Binary Value for Convertion</th>
+        				<th>Bitwise XOR Returned Binary Value</th>
+        				<th>Bitwise XOR Returned Decimal Value</th>
+        				<th>Bitwise XOR to get Converted Decimal Value</th>
+        				<th>Final Converted Character</th>
+        			</tr>
+        		</table>
           </div>
         </article>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          </br>
-        </div>
-      </div>
-
-      <div class="row">
-        <article class="col">
-          <h4><b>title of the post</b></h4>
-          <h6><b>June 27, 2020</b></h6>
-          <p class="text-center">
-            <img src="posts\peach-shift\images\peach-shift.png" class="img-fluid" alt="Responsive image">
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et tempor enim. Etiam quam eros, facilisis vitae egestas in</p>
-          <div class="text-center">
-            <a class="btn btn-outline-read btn-lg" href="purpose.html" role="button">Read More</a>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          </br>
-        </div>
       </div>
     </div>
 
@@ -152,5 +149,6 @@
         $('[data-toggle="tooltip"]').tooltip()
       });
     </script>
+    <script type="text/javascript" src="peach-shift.js"></script>
   </body>
 </html>
