@@ -37,17 +37,20 @@ td {
   text-align: center
 }
 
-[type^="button"] {
+.btn-grid {
   float: center;
   width: 320px;
   font-weight:bold;
   margin: 10px 0px 10px 0px;
 }
 
+[type^="text"] {
+  margin: 5px 5px 5px 5px;
+}
+
 @media (max-width: 767.98px) {
   [type^="text"] {
     width: 160px;
+    margin: 0px 0px 0px 0px;
   }
 }
-
-footer { margin: 0 0 -50px 0;}

@@ -53,9 +53,80 @@
 
     <div class="container">
       <div class="row">
-        <article class="col">
-      		<h1 class="d-none d-lg-block" style="text-align:center">Convert String to Another String Using Bitwise XOR Operation</h1>
-          <h4 class="d-block d-lg-none" style="text-align:center">Convert String to Another String Using Bitwise XOR Operation</h4>
+        <section class="col">
+      		<h2 class="d-none d-lg-block" style="text-align:center"><strong>Convert a String to Another String Using the Bitwise XOR Operation</strong></h2>
+          <h4 class="d-block d-lg-none" style="text-align:center"><strong>Convert a String to Another String Using the Bitwise XOR Operation</strong></h4>
+
+          <p>
+            So, curiousity has gotten the best of you? You want to know what a bitwise exclusive or opertator is?
+            Maybe you already know and are thinking, "This isn't how you use that"? Perhaps you just want to see how dumb this can be.
+            Please, allow me to take you on a magical jounrey or pointlessness.
+          </p>
+
+          <h5><strong>What even is this?</strong></h5>
+
+          <p>
+            This is a demonstration of how to use the bitwise exclusive or opertator to convert one string to another and the process that goes into doing so.
+          </p>
+
+          <h5><strong>Why would you ever do that?</strong></h5>
+
+          <div class="text-center">
+            <img src="images\but-why-though.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            Really, you wouldn't. There's basically no scenario where this would ever be useful or convenient. <strong>But</strong>, that doesn't mean it can't be interesting.
+            This is a neat way to see how the bitwise exclusive or (XOR) operator works. This will allow us to take 2 strings, break them down to decimal values, break them down again to
+            binary values, then use a few extra steps to rebuild our initial string to the string we wish to convert it to.
+          </p>
+
+          <h5><strong>I don't know? That sounds pretty stupid.</strong></h5>
+
+          <div class="text-center">
+            <img src="images\advanced-stupid.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            So, now that we've clarified that this is pretty dumb, let's move on to talking about the smart stuff used to do something so dumb, the XOR operator.
+            The XOR operator is signified by a caret (^) in the majority of programming languages, if not all of them. It's purpose is to take two binary values and
+            compares them. The return of this comparison result in a <strong>1</strong> anywhere the two binary values do not match, and a <strong>0</strong> where they do.
+          </p>
+
+          <h5><strong>How about an example?</strong></h5>
+
+          <p>
+            Alright, let's break this down. We'll start with 2 characters <strong>p</strong> and <strong>s</strong>. <strong>p</strong> is represented by the binary value <strong>1110000</strong>.
+            <strong>s</strong> is represented by the binary value <strong>1110011</strong>. So when we use the bitwise XOR operator, we are writing it as
+            <strong>p ^ s</strong>, however, the computer will see this is <strong>1110000 ^ 1110011</strong>. The computer will then compare these 2 binary numbers to see which
+            bits are the same, and which ones are different. In this case, <strong>11100</strong> are all the same. This will produce five 0 bits. The last two bits of <strong>p</strong>
+            and <strong>s</strong> are differnt. This will produce two 1 bits. That makes the final return of <strong>1110000 ^ 1110011</strong> equal <strong>0000011</strong> or simply
+            <strong>11</strong>. Unforetunately, <strong>11</strong> is difficult to represent as an ASCII character as it stands for "End of Text". ASCII conversion aside, this still makes for a
+            decent example as to how bitwise XOR functions.
+          </p>
+
+          <div class="table-responsive-xl">
+            <table>
+              <th>ASCII Character and XOR Operation</th>
+              <th>Binary Value</th>
+              <tr></tr>
+              <tr>
+                <td>p</td>
+                <td>1110000</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>1110011</td>
+              </tr>
+              <tr>
+                <td>p ^ s</td>
+                <td>0000011</td>
+              </tr>
+            </table>
+          </div>
+
+          <h5><strong>That's pretty neat I guess, but I was promised strong conversions!</strong></h5>
+
           <div class="table-responsive-xl">
         		<table id="tabBody" >
         			<tr id="inputRow" class="trSolid">
@@ -64,7 +135,7 @@
         			</tr>
         			<tr id="submitRow" class="trSolid">
         				<td colspan="12">
-                  <button type="button" class="btn btn-outline-read btn-lg" id="submitId" value="Submit" onclick="submitFields();">Submit</button>
+                  <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="submitId" value="Submit" onclick="submitFields();">Submit</button>
         				</td>
         			</tr>
         			<tr id="stringHeaderRow" class="trSolid" style="display: none;">
@@ -77,7 +148,7 @@
         			</tr>
         			<tr id="resetRow" class="trSolid" style="display: none;">
         				<td colspan="12">
-                  <button type="button" class="btn btn-outline-read btn-lg" id="resetId" value="Reset" onclick="resetPage();">Reset</button>
+                  <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="resetId" value="Reset" onclick="resetPage();">Reset</button>
                 </td>
         			</tr>
         			<tr id="tableHeaderRow" style="display: none;">
@@ -96,7 +167,7 @@
         			</tr>
         		</table>
           </div>
-        </article>
+        </section>
       </div>
     </div>
 
