@@ -54,3 +54,25 @@ td {
     margin: 0px 0px 0px 0px;
   }
 }
+
+textarea {
+  margin: 5px 5px 5px 5px;
+  overflow: auto;
+  resize: none;
+}
+
+@media (max-width: 767.98px) {
+  textarea{
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.clickCopy::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: #f9f9fa
+}
+
+.clickCopy::selection {
+  color: #000;
+  background: #f9f9fa
+}

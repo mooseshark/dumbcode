@@ -1,15 +1,37 @@
 docReady(function() {
-	document.getElementById('ogString').value = "";
-	document.getElementById('convertString').value = ""
+	let textAreas = document.getElementsByTagName('textarea');
+	let textFields = document.getElementsByTagName('input');
 
-	//console.log(String.fromCharCode(3));
-	//console.log((dec >>> 0).toString(2)); //decimal to binary
+	for (t in textAreas){
+		if(textAreas[t].value !== ""){
+			textAreas[t].value = "";
+		}
+	}
+
+	for (f in textFields){
+		if(typeof textFields[f].getAttribute === "function" && textFields[f].getAttribute('type') === 'text'){
+			textFields[f].value = "";
+		}
+	}
 
 	document.getElementById('convertString').addEventListener("keydown", event => {
 	  if (event.isComposing || event.keyCode === 13) {
-	    submitFields()
+	    submitFields();
 	  }
 	});
+
+	document.getElementById('encryptionKey').addEventListener("keydown", event => {
+	  if (event.isComposing || event.keyCode === 13) {
+	    peachEncrypt();
+	  }
+	});
+
+	document.getElementById('decryptionKey').addEventListener("keydown", event => {
+	  if (event.isComposing || event.keyCode === 13) {
+	    peachDecrypt();
+	  }
+	});
+	
 });
 
 function submitFields(){
