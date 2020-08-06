@@ -288,3 +288,11 @@ pre {
     background: #1b8dbf;
     color: #ffffff
 }
+
+.reserved {
+  float: right;
+  color: #fff;
+  font-size: 0.67em;
+  margin-top: 0.33em;
+  margin-right: 0.33em;
+}
