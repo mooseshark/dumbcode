@@ -1,0 +1,27 @@
+GETTING START WITH VUE, APOLLO, AND GRAPHQL
+
+-Starting Vue.js
+	https://vuejs.org/v2/guide/
+	installation
+	implementation
+	instroduction
+	trying it out
+
+-Getting introduced to GraphQL and Apollo
+	https://hasura.io/learn/graphql/vue/introduction/
+	what is GraphQL
+	what is Apollo
+	how to use with Vue.js
+	
+-Implemntation with my own project
+	issues to overcome
+	what's the same
+	whats different
+	vue CLI
+	
+-Deployment
+	Building
+	Hosting
+
+
+	

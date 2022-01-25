@@ -1,0 +1,69 @@
+Last year I had the opportunity to interview with Google. I never expected they would pick me for a technical interview when I applied. I just assumed it would be a "well, at least I tried" type of scenario. To say I was shocked would be an understatement. It left me with one big hurdle to make it over that I hadn't had to deal with yet, whiteboarding. I'd been a developer for almost 6 years at the time. I didn't need to whiteboard for my job, so I never really thought about it. I quickly got to work studying and testing myself with practice problems from leetcode.com. In that time, I came up with a solid way to study, that allowed me to test my own knowledge, and expand upon what I already knew simply by solving leetcode problems.
+
+## What I'll Cover
+I'm going to go over everything you'll need to follow along with my process and teach yourself while solving problems. First, I'll cover my set up for solving problems and taking notes. Next We'll discuss the challenge question, and potential scenarios that whiteboarding may cover. We'll talk about the submission and potential re-submission of your personal answers, and then go into ways to expand your knowledge through Google searches and learning from other peoples solutions.
+
+## Setting Up for Studying
+My setup may be different than what you'll need to do depending on the language you choose to solve problems with. I like to use JavaScript as it's the language I'm most familiar with.
+
+I start by choosing a leetcode problem. Obviously, we need a problem to solve before we can start solving it. For this exercise, I chose the problem that has the highest clear rate on the site, just to keep things simple. I suggest choosing a variety of questions while studying in order to give yourself a lot of different information to study.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/vjo76gkuyqmv9jco76ea.PNG)
+
+Then, I create a new HTML file with just a head and body in it, and I link to a newly created JavaScript file where I'll write my test functions. In the JS file, I'll copy the problem question, and set up an example set of data, then call it inside of a console.log() so I can view my results in the console. It makes for a quick and easy set up, and I don't have to run my tests or make a bunch of submissions on leetcode itself. It also allows me to use comments to make notes on my work for further studying in the future. Typically, I'll keep notes in comments in the .JS file and I'll save previous work just so I know what I did and why. You may opt to take notes a different way and I suggest you do what works best for you.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hkki9xr1kuk0k76lphk9.PNG)
+
+## Finding a Solution
+The first thing I try to do is mimic an interview scenario where I'd be solving a whiteboarding problem. That means, no Google, no books, no personal notes, no material to help whatsoever. I try to come up with my own solution based on my brain and my brain alone. I want to try to solve the problem to the best of my ability at the time. It doesn't have to be the best solution, but I try to get something down without searching. Typically, I'll put a time limit on this though. If I don't have a working example in 30 minutes or so, I'll move on from this step and start googling. If I have an idea but can't finalize it, Google will usually help me bring it home. For this problem I was able to come up with a quick and easy solution luckily.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/vvphfsgsnebxa8toaemk.PNG)
+
+And we can check our results in the console of our browser. I chose to highlight the data set used for testing as well as the result from the solution.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hddu7ms89nlofsbub0m8.PNG)
+
+## Where to go After Finding a Solution?
+For this instance, we're going to assume you solved the problem without needing to look anything up and it's working with the example data from the question. What next?
+
+Typically during whiteboarding interviews, the interviewer will want you to try to solve the problem with additional sets of data. They may also want to know what you would do giving specific data types being passed in or in various scenarios you may encounter in the real world. Since this is JavaScript and arrays can contain anything and in this instance, we are doing math, we should make sure we're checking that only numerical values are being passed in. We should also cover a case where no data is passed in, though in this instance, it should be unneeded as the for loop will have nothing to loop over if the array is empty.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/dlm9dgrwwn503pbh99qx.PNG)
+
+Keep in mind, error handling may or may not be necessary for your submission on leetcode. I've encountered problems that have a lot of test scenarios that cause errors, as well as ones such as this that require no error handling at all.
+
+## Submitting the Solution
+Now that a test has been written, tested, and retested, it's time to submit it and see how we did.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/21gu2g93y50w8fkorukk.PNG)
+
+The first submission was a success! However, sometimes it's worth checking the performance without error handling if it's not required. So, I tested it a few more times.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/db27uh5bs9oq92rehdvg.PNG)
+
+You can note that there's a difference between runtime and memory for the first and second instances. These are both runs without the error handling. It's important to know that leetcode may give you different results for the same code on different runs. So, don't take these results to heart. Since we're studying to become better developers, it's OK if your code is faster than 100% or 0% of other solutions tested. If you've written a successful submission, you're already doing great, and if you haven't, keep going and you'll get there!
+
+## Expanding our Knowledge
+So, it's safe to assume that a successful solution has been submitted. If it hasn't, don't worry, we're going to go digging to learn how other people solved the problem. If you didn't solve it on your own or with Google searches, then this is your chance to learn a few different ways to solve the problem so you can write your own answer next time.
+
+My first suggestion is always Google. Or Bing. Or DuckDuckGo. Whoever your favorite search engine is, that's the one you should use. You can search for the title of the question, or some information from the description or anything descriptive enough to lead you down the path of finding someone else who's solved a similar problem. Take a look at solutions, questions, errors people encountered, and the answers they received. All of this information can give you insight into 1. what to expect when presented with this problem and 2. what others have done in order to solve the problem.  
+
+The next thing to do is to check the leetcode "Discuss" tab on the question. This will bring you to a list of discussions from other users. Typically, these posts are questions about the problem, but more often than not, people use this area to share their own solutions. Now comes the tricky part, going on the hunt for other solutions that are different from yours. Usually you'll find several different solutions than what you've come up with.
+
+I found this map solution by user trueK.
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/suqhk9aruftsd8zlwz40.PNG)
+
+And this reduce solution from user torilov123
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/pqg615bmfequz25vbxhu.PNG)
+
+Both resulting in similar performance to mine, with the map solution by trueK being slightly faster at 68ms.
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/a7jw4pxp3srxcpiji64n.PNG)
+
+## What to do With These Other Solutions?
+Now that we have some other solutions that we know are working, what do we do with them? Well, that depends on what solutions you've found. If you understand what others have done, you just didn't think of them yourself, then you move on to the next question. However, let's say in this case, you have no idea what the map function does. In that case, it's back to your trusty search engine to explore this function. Find out how it works. Write some working examples with it. Build a small app using it. Do what works best for you to learn this new function. By better understanding it, you'll better understand how to use it to solve problems in the future, thus expanding your knowledge and learning something new, all from having solved a problem on leetcode.com.
+
+## Final Thoughts
+Hopefully this gives some insight into how I've been using leetcode to study, and maybe you'll find that this method of studying works great for you as well. It's helped me learn some Computer Science related things I never learned in school, new functions, new sorts, new concepts, and tons of other information about development. For my Google interview, I spent about 4 weeks doing this process every day about 4-7 hours a day and in that time managed to learn a ton of new information. It's a lot of research, a lot of note taking and a whole lot of thinking, but you'll come out learning something new that will help you in the future. 
+
+As a disclaimer, I did not get a job at Google, but I was able to answer one of the two whiteboarding problems they presented me with. I was able to land a job later on at another company where I once again had to go through the whiteboarding process. Studying this way really did help improve my skills as a developer and I found myself reading more and challenging myself more frequently because of it. Like all walks of life, some people on leetcode will not be kind to you, but others will offer real friendly and helpful advice. So don't get too distraught if you have a bad experience one day, you'll have many good ones as well.
+

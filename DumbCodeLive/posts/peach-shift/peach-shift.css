@@ -1,0 +1,78 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #77dfff;
+  width: 120px
+}
+
+tr:hover {
+  background-color: #ffff99;
+}
+
+tr:nth-child(even):hover {
+  background-color: #ffff99;
+}
+
+tr:nth-child(even) {background-color: #77ffdb;}
+
+.trSolid:hover {
+  background-color: #fff
+}
+
+.trSolid:nth-child(even):hover {
+  background-color: #fff
+}
+
+.trSolid:nth-child(even) {background-color: #fff;}
+
+td {
+  border: 1px solid #000;
+  text-align: center
+}
+
+.btn-grid {
+  float: center;
+  width: 320px;
+  font-weight:bold;
+  margin: 10px 0px 10px 0px;
+}
+
+[type^="text"] {
+  margin: 5px 5px 5px 5px;
+}
+
+@media (max-width: 767.98px) {
+  [type^="text"] {
+    width: 160px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+textarea {
+  margin: 5px 5px 5px 5px;
+  overflow: auto;
+  resize: none;
+}
+
+@media (max-width: 767.98px) {
+  textarea{
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.clickCopy::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: #f9f9fa
+}
+
+.clickCopy::selection {
+  color: #000;
+  background: #f9f9fa
+}

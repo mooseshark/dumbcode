@@ -1,0 +1,63 @@
+*What We'll Cover 
+Setting up
+Initial testing
+Error handling 
+Submission 
+Resubmission
+Searching for better solutions
+Different ways to learn more solutions 
+What to do when we can't come up with a solution on our own 
+
+*Set Up for Studying
+
+Started with coping problem to a new JS file to test solutions
+Named file after function and linked in my test HTML file
+Added the example data to a variable (nums) as a test when writing
+convered the functions from var runningSum = function(nums) to function runningSum(nums)
+
+*Start Solution
+
+Start by thinking of solutions I can do on my own without any research or googling
+	This step is important for interviews as there will be no resources for solving problems typically
+After finding a solution, tested it against multiple sets of data, include the sets provided in the leetcode question and self defined data 
+It's ok for the initial solution to be bad 
+
+*Secondary Testing
+
+Even though a solution appears to be working, there may be cases that need to be handled in case of error unless specifically noted in the problem 
+These cases could include invalid data entries, invalid data types, no data being passed into the function or any other scenarios that may be present
+The next step should be to cover as many of these cases as possible. They may be unnecassary for the problem, but employers will want to see you can think through these types of issues, or may even ask about them
+	Catching errors early can also speeds up testing and run time
+	
+*Submitting the Solution
+
+When happy with how the solution turned out and you can't think of a way to improve it without searching or viewing other submissions, submit it and see if it passes
+
+*When the Submission doesn't Pass
+
+We take a step back. Analyze the scenario that caused the soltion to fail
+Take that data set back to your example and try it out to see what happens
+If you can, implement a solution to resolve this conflict
+Resubmit the solution
+Repeat if necessary 
+
+*Submission memory and timing
+
+Sometimes the same submission can be faster or slower, or used more or less memory to run
+Running a solution multiple times can highlight this discrepancy
+Ran with error handling 
+Ran twice without error handling 
+The 2 times without error handling resulted in different memory usage and speed for the same function 
+
+*Expanding out knowledge
+
+The initial run wasn't too bad, however we may be able to improve
+1. google new solutions
+2. Check Discussion on leetcode
+3. Check discussion for similar languages and see what can be converted to language of use
+compare, contrasts and understand why we would use these different methods of solving the same problem
+
+*What to do if we can't figure out a solution 
+
+If you can't figure out a solution on your own, move on to google after a little while
+

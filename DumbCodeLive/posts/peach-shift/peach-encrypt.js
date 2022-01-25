@@ -152,6 +152,6 @@ function printDecryptedMessageMobile(message){
 function copyTextArea(id){
   let copyText = document.getElementById(id);
   copyText.select();
-  copyText.setSelectionRange(0, 99999);
+  copyText.setSelectionRange(0, 99999); 
   document.execCommand("copy");
 }
