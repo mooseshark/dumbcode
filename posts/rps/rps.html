@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../dumbcode.css">
+    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="../code-highlight/atom-one-light.css">
+    <script src="../code-highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <title>Dumb Code</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #a79aff; color: #ffffff">
+      <a class="navbar-brand" href="../../index.html">
+        <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+        </svg>
+        <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html"><b>Posts</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../purpose.html"><b>Purpose</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../personality.html"><b>Personality</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../prosperity.html"><b>Prosperity</b></a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="../../sitemap.html"><b>Site Map</b></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/moosesharkgames" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <section class="col">
+      		<div class="h1 d-none d-lg-block" style="text-align:center"><strong>Super Basic Intro to Using HTML and JavaScript Together</strong></div>
+          <div  class="h4 d-block d-lg-none" style="text-align:center"><strong>Super Basic Intro to Using HTML and JavaScript Together</strong></div>
+
+          <p>
+
+          </p>
+
+          <p>
+            One of the biggest problems I, and I think a lot of new developers have come across while learning web development is a disjointed understanding
+            of how HTML and JavaScript work together. Many tutorials focus on one or the other and it can lead to some confusion around how to actually use
+            HTML and JavaScript together to create apps and web pages. This tutorial will go in depth to break down a very simple project. We’ll make a small
+            Rock, Paper, Scissors game that takes user input, determines the outcome of the selections, and prints the result to the user.
+          </p>
+
+          <div class="h4"><strong>Prerequisites for this Tutorial</strong></div>
+
+          <p>
+            While the point of this is to be as beginner friendly as possible, the focus is much more on using HTML and JavaScript together, and less on HTML
+            and JavaScript basics. I think an extremely introductory level of skill should be had beforehand. Doing the HTML and JavaScript courses someplace
+            like Codecademy would be ideal and would provide enough knowledge to follow along without much issue. You should also have something to write code in.
+            An IDE like VSCode is best, but something like Notepad will be fine. If you’re reading this, then you probably already have a web browser, so no concerns
+            there. Or you are a Technomancer, in which case you can probably disregard this tutorial.
+          </p>
+
+          <div class="h4"><strong>With that, Let’s Begin with HTML</strong></div>
+
+          <p>
+            We’ll start with the most basic of basic things, an empty HTML page. Open your code writing app of choice and let’s create a new file and call it
+            <strong>rps.html</strong>. This will be what holds all of our HTML for our Rock, Paper, Scissors game. Inside we’ll be adding <code>&lt;html&gt;</code>,
+            <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags to
+            get started.
+          </p>
+
+          <p>
+            Our <code>&lt;html&gt;</code> tags will encase everything we need for our game. <code>&lt;head&gt;</code> is where we’ll be adding a title, linking our JavaScript file, and maybe adding
+            just a little bit of style to our game. <code>&lt;body&gt;</code> will house our game inputs and results. We’ll also add a little title and description so players
+            know what’s going on.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            You can open this page by navigating to where you’ve saved your <strong>.html</strong> file and double clicking it. If it doesn’t open in your default web browser, try right
+            clicking and selecting an <strong>Open With</strong> option. We’ll be looking at this page a lot as we go so it’s worthwhile to keep it open in your browser.
+          </p>
+
+          <div class="h4"><strong>Let’s Jump Right In to Making a Game</strong></div>
+
+          <p>
+            Now, this isn’t going to get too fancy. We want to keep it simple and easy to understand. Rock, Paper, Scissors doesn’t require a complex set up. We need a way for two
+            players to make a selection and not much else. Because of that, we’re opting for a way to make that selection easy, a <code>&lt;form&gt;</code> with two <code>&lt;select&gt;</code>
+            fields. Our <code>&lt;select&gt;</code> fields will have three options (Rock, Paper, Scissors) each and there’s 2 of them for the typical player count of Rock, Paper, Scissors.
+          </p>
+
+          <p>
+            Inside our <code>&lt;body&gt;</code> tags, let's create a form with opening and closing <code>&lt;form&gt;</code> tags. Our form tags are going to create a nice organizational element
+            to hold our select fields, their labels and our submit button we’ll eventually add.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;form&gt;
+&lt;/form&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Inbetween our <code>&lt;form&gt;</code> tags, we are going to add our <code>&lt;select&gt;</code> fields. These are going to be made up of three elements: a <code>&lt;label&gt;</code> to show what the select field is for, a
+            <code>&lt;select&gt;</code> to create the drop down list portions of our select field, and some <code>&lt;option&gt;</code> tags to give us something to select in the field.
+          </p>
+
+          <p>
+            We’ll start by creating our first select field for <strong>Player 1</strong>. Let’s make opening and closing <code>&lt;label&gt;</code> tags.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;label&gt;&lt;/label&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Since we want this label to be for player one, let’s slap that inbetween the two tags so we know who’s selecting what. Of course, feel free to call your players or
+            selections whatever you want. We’ll be keeping it pretty generic here to make it easy to follow.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;label&gt;Player 1: &lt;/label&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Next, let’s start our select field proper with some opening and closing select tags. We’re going to stack anything we’ll need to add more elements to for some easy formatting.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;select&gt;
+&lt;/select&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Our select field is pretty barren, and we’re going to need something to reference when we get to the JavaScript portion of things, so let's add an <strong>id</strong> attribute to it.
+            Your <strong>id</strong> attribute can be anything, but we want it to be descriptive so we know what we’re looking at, so let’s call it <strong>player1</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;select id="player1"&gt;
+&lt;/select&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Now that we have an <strong>id</strong> on our select field, we need to go back and amend our <code>&lt;label&gt;</code>. We’re going to add a <strong>for</strong> attribute to the label. The <strong>for</strong> attribute lets us
+            say what element the label is for by referencing that element's <strong>id</strong>. Since this is for our element with the id of <strong>player1</strong>, we’ll add the for attribute as such.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;label for="player1"&gt;Player 1: &lt;/label&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Now we can finish off our select field with some options. Inside the <code>&lt;select&gt;</code> tags, we’re going to add three options. Each option uses its own <code>&lt;option&gt;</code>
+            opening and closing tags. These tags will have a <strong>value</strong> attribute attached to them, and inside the tags, we’ll put some text to say what we want them to say. Let’s make an example with Rock.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;option value="Rock"&gt;Rock&lt;/select&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            You can see we made the value and the display text the same. The value could be anything you want to represent someone picking Rock (a number, letter, different words),
+            but we are going to stick with Rock in order to make use of the value later in our JavaScript.
+          </p>
+
+          <p>
+            We can now add the options for Paper and Scissors in the same way. At the end, we’ll have a little select field snippet that looks something like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;label for="player1"&gt;Player 1: &lt;/label&gt;
+  &lt;select id="player1"&gt;
+    &lt;option value="Rock"&gt;Rock&lt;/select&gt;
+    &lt;option value="Paper"&gt;Paper&lt;/select&gt;
+    &lt;option value="Scissors"&gt;Scissors&lt;/select&gt;
+  &lt;/select&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            We’ve created a first player, but we still need a second. Afterall, playing Rock, Paper, Scissors with only one person is about as fun as simulating it on a computer with
+            two drop down menus. We’re going to do what developers have been trying to do for decades and make our lives easier by just copying and pasting Player 1, and changing a few
+            things so that we have a Player 2.
+          </p>
+
+          <p>
+            Almost everything is identical, but we need to update our <strong>for</strong>, <strong>id</strong>, and <strong>label</strong> text to reference 2 instead of 1.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;label for="player2"&gt;Player 2: &lt;/label&gt;
+  &lt;select id="player2"&gt;
+    &lt;option value="Rock"&gt;Rock&lt;/select&gt;
+    &lt;option value="Paper"&gt;Paper&lt;/select&gt;
+    &lt;option value="Scissors"&gt;Scissors&lt;/select&gt;
+  &lt;/select&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Well, we did it! We have two players to play the game. But we need one more thing before we can move on to our JavaScript and be done with our <code>&lt;form&gt;</code> We’re
+            going to need to create a button to submit our choices in order to determine who will come out as victorious in our high stakes Rock, Paper, Scissors simulator.
+          </p>
+
+          <div class="h4"><strong>Time to Make Our Form Capable of Doing Work</strong></div>
+
+          <p>
+            Forms are special in that we could assign an <strong>action</strong> attribute to our form and create an <code>&lt;input&gt;</code> to submit our form to that action, but we’re going to keep
+            it a little simpler than that. Instead we are going to create an <code>&lt;input&gt;</code> with a few attributes. We’ll need a <strong>type</strong>, a <strong>value</strong>, and also an
+            event called <strong>onclick</strong>.
+          </p>
+
+          <p>
+            Let’s start with the small stuff, the attributes. <code>&lt;input&gt;</code> is a little unique in that we can give it a <strong>type</strong> and depending on that type it can be and do
+            different things. We could make text fields and number fields or checkboxes or a vast assortment of things and they all have different properties to them.
+            However, we want to submit a form and for that, we’re going to want to click a button. So, big shock, we’re going to give our <code>&lt;input&gt;</code> a <strong>type</strong> of <strong>button</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;input type="button"&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            We also want our <code>&lt;input&gt;</code> to say something so the user knows clicking it is required to play. A <strong>value</strong> attribute will let us add some text to our button
+            and spruce it up a bit. Since this is Rock, Paper, Scissors, I think it’s appropriate to call that <strong>value</strong> “Shoot”. Feel free to put whatever you like as
+            your <strong>value</strong>. It is strictly visual in this case and won’t impact how the game functions. Afterwards you’ll end up with something like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;input type="button" value="Shoot!"&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Now I mentioned one other thing we need and that’s an <strong>event</strong> known as <strong>onclick</strong>. But what is an <strong>onclick</strong> event? It’s kind of exactly what it sounds like. It’s an event that
+            triggers when you click on an element. In this case, our button is what’s being clicked on and the event we’re going to be firing is the JavaScript code we’ll write. An
+            onclick event can execute code in a variety of ways, but what we’ll be focusing on is probably the most common, calling a <strong>function</strong>.
+          </p>
+
+          <p>
+            We haven’t written any JavaScript code just yet, so we don’t even know what we’re going to be calling our <strong>function</strong>. Well, we’re going to cheat a little. We
+            know we’re playing a game, so we’re going to continue to keep it simple and call it <strong>playGame()</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;input type="button" value="Shoot!" onclick="playGame()"&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            Now, if you look at your form in a web browser, you’ll notice things are looking a little cramped. Let’s space it out a bit with a few break
+            tags (<code>&lt;br&gt;</code>) after each closing <code>&lt;/select&gt;</code> tag. It’ll add a new line between our elements and make things look a bit nicer.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;/select&gt;
+&lt;!--- here for break tags ---&gt;
+&lt;br&gt;
+&lt;br&gt;
+            </code></pre>
+          </div>
+
+          <p>
+            With all said and done, we should have our full form complete. That means we have everything we need to start playing with JavaScript and making our game do something.
+            You’re full HTML file should look something like this at this point
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;form&gt;
+    &lt;label for="player1"&gt;Player 1: &lt;/label&gt;
+      &lt;select name="player1" id="player1"&gt;
+        &lt;option value="Rock"&gt;Rock&lt;/option&gt;
+        &lt;option value="Paper"&gt;Paper&lt;/option&gt;
+        &lt;option value="Scissors"&gt;Scissors&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;label for="player2"&gt;Player 2: &lt;/label&gt;
+      &lt;select name="player2" id="player2"&gt;
+        &lt;option value="Rock"&gt;Rock&lt;/option&gt;
+        &lt;option value="Paper"&gt;Paper&lt;/option&gt;
+        &lt;option value="Scissors"&gt;Scissors&lt;/option&gt;
+       &lt;/select&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;input id="submitId" type="button" value="Shoot!" onclick="playGame();"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Time to Make a Game Playable with JavaScript</strong></div>
+
+          <p>
+            First things first, we’re going to need a new JavaScript file. Let's make a new file in the same directory as our HTML file and call it <strong>rps.js</strong>.
+            Go ahead and open it up if it’s not already open and we’ll add our first bit of JavaScript.
+          </p>
+
+          <p>
+            We’re going to start by creating a new <strong>function</strong>. A <strong>function</strong> is just a snippet of code that lets us set up some repeatable steps
+            for our application to execute. In our situation, we are writing the steps that allow our game to be playable, but functions are a very powerful tool and let us
+            repeat actions without the need to rewrite them over and over again. Each time we want to perform an action, we can just <strong>call</strong> our <strong>function</strong>. In our HTML file,
+            we already set up what the name of our function should be in our <strong>onclick</strong> event so we can go ahead add that <strong>function</strong> to our JS
+            file using the function keyword like so:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+function playGame(){
+}
+            </code></pre>
+          </div>
+
+          <p>
+            Great! We have some Javascript. Now what? Well, we’re going to do something that’s not always necessary, but for the purposes of learning,
+            let’s just test our <strong>onclick</strong> event and see if it works.
+          </p>
+
+          <p>
+            For some basic testing, let’s add a <strong>console.log()</strong> to our function so we can print some text to our console and see the <strong>onclick</strong> event in action.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+function playGame(){
+  console.log(‘testing our game’);
+}
+            </code></pre>
+          </div>
+
+          <p>
+            If you haven’t already, open your <strong>rps.html</strong> file in your default browser and let’s try running the game by making two selections and clicking the <strong>Shoot!</strong> button.
+          </p>
+
+          <p>
+            And… oh noooo! It didn’t work. So, what happened? I expect that you got something along the lines of:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+“Uncaught ReferenceError: playGame is not defined
+at HTMLInputElement.onclick (rps.html:23:75)”.
+            </code></pre>
+          </div>
+
+          <p>
+            No problem! Nothing to worry about. We got this error because we did not link our JavaScript file to our HTML file. Let’s take care of that now and
+            then talk about errors and how we can decipher them.
+          </p>
+
+          <p>
+            Go back to our <strong>rps.html</strong> file and let’s add a <code>&lt;script&gt;</code> tag. We can add this in a couple locations, the <code>&lt;head&gt;</code>, or
+            the <code>&lt;body&gt;</code>. While adding to the <code>&lt;head&gt;</code> works and in our case isn’t going to cause any issues, best practice is to add
+            JavaScript <code>&lt;script&gt;</code> tags at the bottom of the <code>&lt;body&gt;</code>, just before the closing <code>&lt;/body&gt;</code> tag.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+<code>&lt;script&gt;</code><code>&lt;/script&gt;</code>
+<code>&lt;/body&gt;</code>
+            </code></pre>
+          </div>
+
+          <p>
+            We’re going to add two attributes to our <code>&lt;script&gt;</code> tag. We want to specify a <strong>type</strong>, which in this case will be <strong>text/javascript</strong>,
+            and we want to add a <strong>source</strong> attribute (<strong>src</strong>) to point to the JavaScript file we created based on the path from the <strong>HTML</strong> file. In our case,
+            we will link directly to <strong>rps.js</strong> because it's in the same directory as <strong>rps.html</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+<code>&lt;script type="text/javascript" src="rps.js"&gt;</code><code>&lt;/script&gt;</code>
+            </code></pre>
+          </div>
+
+          <p>
+            Now let’s go back to the web browser, refresh, and try clicking the <strong>Shoot!</strong> button again. This time we should see the text from our <strong>console.log()</strong> in the console.
+          </p>
+
+          <p>
+            Let's do a quick breakdown on the error we received.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+“Uncaught ReferenceError: playGame is not defined
+            </code></pre>
+          </div>
+
+          <p>
+            This first part is letting us know what’s wrong. We got an error and that error is that <strong>playGame</strong> is not defined. It’s not defined because according to our HTML
+            page, that <strong>function</strong> doesn’t exist.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+at HTMLInputElement.onclick (rps.html:23:75)”.
+            </code></pre>
+          </div>
+
+          <p>
+            We know that the HTML page is looking for that <strong>function</strong> and can’t find it because we specifically told it to use a <strong>function</strong> called <strong>playGame</strong>
+            in our <strong>onclick</strong> event. We know the error is happening as a result of that <strong>onclick</strong> event because <strong>HTMLInputElement.onclick</strong> is saying the error happens on this html element, on
+            it’s <strong>onclick</strong> event. <strong>(rps.html:23:75)</strong> is saying, “Hey, the error is in your <strong>rps.html</strong> file at <strong>line 23</strong>, <strong>75 spaces</strong> from the start of that line.
+            Sometimes, the spaces into the line aren’t super important to troubleshooting, but the line number is almost always helpful for tracking down a problem.
+          </p>
+
+          <p>
+            How do we know that, based on this error, we need to add a <code>&lt;script&gt;</code> tag for our JavaScript file? Really, it’s something that will come with experience. If
+            you get that error, and you use what we just discussed to determine where it’s happening, it’ll be easy to search for what the cause is online. For us,
+            we could determine that our <strong>onclick</strong> event is looking for our <strong>function</strong> and saying it’s undefined. With that knowledge, we could search the world wide web
+            for something like, <strong>"onclick event throws error function is not defined"</strong>, and we’ll likely come across a post on <strong>stackoverflow</strong> or somewhere where someone
+            has asked a similar or the same question and we can go through answers and try to determine what we are missing and what’s wrong.
+          </p>
+
+          <p>
+            It’s a bit frustrating and it’s not ideal, but it’s also a big part of current development and utilizing resources to resolve issues is something you’ll
+            be doing throughout your development career.
+          </p>
+
+          <div class="h4"><strong>Now, Back To Our Show</strong></div>
+
+          <p>
+            That was a big ol’ side quest from our tutorial, but it’s an important thing to understand and utilize. You’ll be seeing a lot of errors and some of
+            them aren’t going to be very helpful at all. The more you experience and resolve the more likely you are to spend less time on them in the future.
+          </p>
+
+          <p>
+            Let’s get this show back on the road. We have some <strong>select</strong> fields in our HTML file, and those fields have values that we want. Not only do we want
+            them, but we want them at the ready to be used as much as we need, and that means we need them set to a variable. Let’s create our first variable,
+            assign it a value, then talk through what it is exactly that we’re doing.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+let player1 = document.getElementById('player1').value;
+            </code></pre>
+          </div>
+
+          <p>
+            You’re probably at least familiar with variables and variable keywords, but we’ll do a deep dive on this one and break out each piece
+          </p>
+
+          <p>
+            <strong>let</strong> is our keyword for defining a variable that we plan to potentially overwrite or we expect the value of it to change at some point.
+          </p>
+
+          <p>
+            <strong>player1</strong> is the name of our variable. We’ve called it <strong>player1</strong> to match with our first <strong>select</strong> field for <strong>Player 1</strong>.
+          </p>
+
+          <p>
+            <strong>=</strong> to say we are setting <strong>player1</strong> equal to something.
+          </p>
+
+          <p>
+            <strong>document</strong> is generally the page that the JavaScript is running on. In this case, our HTML page is the document.
+          </p>
+
+          <p>
+            <strong>.getElementById(‘player1’</strong>) is a built-in function for <strong>document</strong> that allows us to search our HTML page for an element based on its <strong>id</strong> attribute.
+            In this case, the element we are looking for is our first <strong>select</strong> field for <strong>Player 1</strong>. We gave that field an <strong>id</strong> attribute of <strong>player1</strong>.
+            So, we are referencing that <strong>id</strong> and using it to get us the element so that way we can retrieve information from it.
+          </p>
+
+          <p>
+            <strong>.value</strong> gives us the <strong>value</strong> of the element. In this case, <strong>value</strong> is the value of the <strong>option</strong> we selected in the <strong>select</strong> field.
+          </p>
+
+          <p>
+            <strong>;</strong> to close out the JS line. While potentially not necessary, it is still good practice to include.
+          </p>
+
+          <p>
+            Now that we’ve broken down how we plan to get a value from our select field, try doing the same for <strong>Player 2</strong>.
+          </p>
+
+          <p>
+            At this point, our JavaScript file should look something like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+function playGame(){
+  let player1 = document.getElementById('player1').value;
+  let player2 = document.getElementById('player2').value;
+
+  console.log('testing our game');
+}
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Looking Pretty Good</strong></div>
+
+          <p>
+            We’re off to a good start here. Now we have access to the <strong>values</strong> from our <strong>select</strong> fields. That means we can do something with them, right? It suuuure does.
+            Now, we can work out our win conditions and add a little text to say who comes out on top.
+          </p>
+
+          <p>
+            First, let’s add one more <strong>variable</strong>. We’ll call it <strong>result</strong> and we’ll set it equal to an empty string using two single quotes (<strong>''</strong>).
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+let result = '';
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Adding Some Conditional Logic</strong></div>
+
+          <p>
+            OK, let’s get deep into this and figure out how to figure out who wins in a game of rock, paper, scissors. If you don’t know the rules, no worries.
+            It’s pretty simple. Rock beats scissors, scissors beats paper, paper beats rock. That’s it. Not a whole lot to the game really.
+          </p>
+
+          <p>
+            So how do we choose the best way to determine our win conditions?
+          </p>
+
+          <div class="h4"><strong>MENTAL EXERCISE TIME!!!!!!</strong> PLAY HORN SOUND BUTTON HERE!</div>
+
+          <p>
+            Yep, this is a tutorial about using JavaScript with HTML, but maybe we can expand the JavaScript part a bit more. No need to write any code or anything.
+            But, before continuing, maybe take a minute to consider how you would approach this problem programmatically. Think of the possible win/lose combinations
+            for rock, paper, scissors and consider how you would approach logically figuring out who wins each game. The important thing is that even if your solution
+            is different than below, it can still be correct. Lots of problems have multiple solutions and you may come up with a good way to solve this on your own.
+            You can also consider that not every solution would work for each situation. Don’t worry if you’re not sure. No harm in not coming up with anything and no
+            harm in not having a full solution. You can always come back to this step and try out other solutions when we're done, or even expand on what we write in the tutorial.
+          </p>
+
+          <div class="h4"><strong>For Now…</strong></div>
+
+          <p>
+            We’re going to go with my favorite solution, the short and easy route. We’ll just use a few <strong>if/else if/else</strong> conditional statements and try to keep things
+            nice and clean. We really only care about two types of conditions: a <strong>tie</strong>, and <strong>player1</strong> winning. If our game doesn’t result in either of those conditions,
+            then we can assume <strong>player2</strong> is the winner. With that logic, we don’t need to overcomplicate our comparisons.
+          </p>
+
+          <p>
+            Let’s start with our first condition. We'll start with an <strong>if</strong> statement which lets us make some comparison and determine if the logic makes sense. We
+            can use some really simple logic that says if the value of <strong>player1</strong> <strong>equals</strong> (represented by two equals signs <strong>==</strong>) the value of <strong>player2</strong> then the game is a tie.
+          </p>
+
+          <p>
+            This is where we’ll first get to use our <strong>result</strong> variable as well. When we defined result, we created it as a placeholder with the value of an empty string.
+            We can now assign it a new value that we would like to use to display the results of the game. We’ll do this similarly to how we initially defined it, but
+            without the <strong>let</strong> keyword. And now we’ll also set it to a string value that will mean something to our player, like <strong>'Tie!'</strong>.
+          </p>
+
+          <p>
+            We should come up with something like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+if (player1 == player2) {
+  result = 'Tie!';
+}
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>A Quick Test</strong></div>
+
+          <p>
+            Before we continue on with our logical steps, let’s reutilize some existing code and test that our conditional statement is working as expected. In the
+            <strong>console.log()</strong> we already have in our function, remove the text <strong>'testing our game'</strong> and replace it with our <strong>result</strong> variable.
+          </p>
+
+          <p>
+            Now, refresh your browser, make sure your console is open, and select the same value for <strong>player1</strong> and <strong>player2</strong> and press the
+            <strong>Shoot!</strong> button. You should see <strong>Tie!</strong> in your console window if your <strong>if</strong> conditional statement is working properly.
+          </p>
+
+          <div class="h4"><strong>But What Else</strong></div>
+
+          <p>
+            Let’s continue on our journey to logical conclusion by skipping a bunch of steps in favor of pairing up the <strong>if</strong> conditions best partner in crime, an <strong>else</strong>
+            condition. With an <strong>else</strong> condition we’re basically saying that any logic not caught by the <strong>if</strong> must make the <strong>else</strong> statement the true statement.
+            In our case, and temporarily to the benefit of <strong>player2</strong>, our <strong>else</strong> condition is going to say that <strong>player2</strong>, for a few brief fleeting moments (unless
+            you decide to skip testing this code change), wins if the game isn't a tie.
+          </p>
+
+          <p>
+            An important side note, an <strong>if</strong> can exist without an <strong>else</strong> but, not the other way around.
+          </p>
+
+          <p>
+            To append an <strong>else</strong> to our <strong>if</strong> we just simply write else after our closing curly brace (<strong>}</strong>) for the <strong>if</strong> conditional, and
+            add a new opening and closing curly brace for the contents of the <strong>else</strong> to reside in.
+          </p>
+
+          <p>
+            We’ll also add some new text for our <strong>result</strong> variable to be set to. Seems fitting we say that <strong>result</strong> is equal to <strong>‘Player 2 Wins!’</strong>.
+          </p>
+
+          <p>
+            When we’re done we’ll have something like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+if (player1 == player2) {
+  result = 'Tie!';
+} else {
+  result = ‘Player 2 Wins!’;
+}
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Continuing Logic</strong></div>
+
+          <p>
+            Now we can finish off our little logic block here with a fancy bit of <strong>else if</strong> conditional statements. There’s work like adding another <strong>if</strong> condition into the mix
+            before our final <strong>else</strong> condition and we can use them to check if <strong>player1</strong> should be the winner given a certain selection from each player.
+          </p>
+
+          <p>
+            In our <strong>else if</strong> statements we need to know a bit more information than we did in our <strong>if</strong> statement. We need to know what <strong>player1</strong> and <strong>player2</strong> selected, and more
+            importantly, we need to know if <strong>player1</strong> selected something that will beat <strong>player2</strong>. Luckily, we know the rules to rock, paper, scissors, so we can simply check
+            if each player selected a specific <strong>value</strong> that would result in <strong>player1</strong> being the winner.
+          </p>
+
+          <p>
+            We’ll do this by checking two statements and determining if they are both <strong>true</strong>. If both are <strong>true</strong> then we’ll be able to conclude that <strong>player1</strong> is the winner.
+            Let’s walk through the win condition for if <strong>player1</strong> picks <strong>Rock</strong>.
+          </p>
+
+          <p>
+            We’ll start like with our <strong>else</strong> condition by appending <strong>else if</strong> after the closing curly brace (<strong>}</strong>) of our <strong>if</strong> conditional. Now we’ll need to add opening and
+            closing parentheses after else if, jsut like with our <strong>if</strong> conditional. Inside those parentheses is where we’ll write our conditional logic.
+          </p>
+
+          <p>
+            In this instance, we know that we want to check if <strong>player1</strong> picked <strong>Rock</strong>. we can do so by checking that our value for <strong>player1</strong> equals the string <strong>‘Rock’</strong>.
+            If it does, then that means our first statement is <strong>true</strong>, which is what we want.
+          </p>
+
+          <p>
+            Now we need to add an additional condition into the mix. To do so we’re going to use a conditional operator for <strong>AND</strong>. It looks like <strong>&&</strong> and says that
+            an entire statement is <strong>true</strong> if each of the statements separated by the <strong>&&</strong> operator are <strong>true</strong>.
+          </p>
+
+          <p>
+            Next, we need to know that <strong>player2</strong> would need to pick something that would lose to <strong>Rock</strong>, so they would have picked <strong>Scissors</strong>. We’ll essentially be doing the same check we did
+            for <strong>player1</strong>, but for <strong>player2</strong> and making sure they selected <strong>'Scissors'</strong>.
+          </p>
+
+          <p>
+            Now outside of the parentheses, we can add our open and closing curly braces to house our <strong>result</strong> which will be us similarly setting the <strong>result</strong>
+            variable to something like <strong>‘Player 1 Wins!’</strong>.
+          </p>
+
+          <p>
+            In the end you’ll have something that looks a bit like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+else if (player1 == 'Rock' && player2 == 'Scissors') {
+  result = ‘Player 1 Wins!’;
+}
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>And The Logical Conclusion</strong></div>
+
+          <p>
+            We’re moving ever so close to being done with the logic portion of this. Now we just need to write two more <strong>else if</strong> conditions to follow up our first one. One
+            where <strong>player1</strong> picks <strong>Paper</strong> and <strong>player2</strong> picks <strong>Rock</strong> and one for when <strong>player1</strong> picks <strong>Scissors</strong>
+            and <strong>player2</strong> picks <strong>Paper</strong>. I’ll let you write these two out on your own, but below will be what your <strong>function</strong> should look like so far. When you’re done,
+            go ahead and try a few games with the console window open. Since we still have our <strong>console.log(result);</strong> code at the bottom of our <strong>function</strong>, you should be able to see the game in action.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+function playGame(){
+  let player1 = document.getElementById('player1').value;
+  let player2 = document.getElementById('player2').value;
+  let result = '';
+
+  if (player1 == player2) {
+    result = 'Tie!';
+  } else if (player1 == 'Rock' && player2 == 'Scissors') {
+    result = 'Player 1 Wins!';
+  } else if (player1 == 'Paper' && player2 == 'Rock') {
+    result = 'Player 1 Wins!';
+  } else if (player1 == 'Scissors' && player2 == 'Paper') {
+    result = 'Player 1 Wins!';
+  } else {
+    result = 'Player 2 Wins!';
+  }
+
+  console.log(result);
+}
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Displaying a Win to Players</strong></div>
+
+          <p>
+            Now we have a functioning game. You're making selections in <strong>HTML</strong> and then using <strong>JavaScript</strong> to figure out some logic and print out who’s the game winner in
+            the console. But, people don’t tend to go to the console window looking for information. They want to see results up on the screen, so that’s what we’re going
+            to make our code do.
+          </p>
+
+          <div class="h4"><strong>Back to HTML</strong></div>
+
+          <p>
+            We’re going to start by going back to our <strong>HTML</strong> page. We want to add a little placeholder element where we can display our <strong>result</strong>.
+          </p>
+
+          <p>
+            Under the closing tag for <strong>form</strong> (<code>&lt;/form&gt;</code>), put a space for us to add our new tag to hold our result value. For simplicity,
+            we’re going to use an <code>&lt;h2&gt;</code> tag. We want our result to be large and visible. We could do this in a variety of other ways,
+            but in the interest of keeping it simple, we’ll let that tag handle all that for us.
+          </p>
+
+          <p>
+            Inside our <code>&lt;h2&gt;</code> tag we’ll need to include an <strong>id</strong> attribute just like we did with our <code>&lt;select&gt;</code> fields. We’ll
+            set our <strong>id</strong> to <strong>resultEl</strong> since it’s the element we want to use to display our result.
+          </p>
+
+          <p>
+            In the end, your HTML should just have this one additional line between the closing <code>&lt;form&gt;</code> tag and the <code>&lt;script&gt;</code> tag, like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;/form&gt;
+&lt;h2 id="result"&gt;&lt;/h2&gt;
+&lt;script type="text/javascript" src="tmp.js"&gt;&lt;/script&gt;
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>And Back to the JavaScript</strong></div>
+
+          <p>
+            Yep, that’s it. That’s all the <strong>HTML</strong> we’ll need to add. Now things are going to get a bit more tricky and we’re going to actually
+            be manipulating our <strong>HTML</strong> with <strong>JavaScript</strong>
+          </p>
+
+          <p>
+            We’re going to start with adding two additional variables. We need a variable to get our result element from our <strong>HTML</strong>, the same way
+            we got the elements for <strong>player1</strong> and <strong>player2</strong>. We’ll just need to get that element by its <strong>id</strong> attribute, <strong>resultEl</strong>.
+          </p>
+
+          <p>
+            Next we need an element to hold an <strong>HTML</strong> element we’re going to let <strong>JavaScript</strong> create for us using a function similar to how
+            we used <strong>document.getElementById()</strong>. For now we can just call it <strong>resultTextNode</strong> and we don’t need to assign it a value.
+          </p>
+
+          <p>
+            Your two new variables should be fairly similar to this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+let resultEl = document.getElementById('resultEl');
+let resultTextNode;
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Creating a TextNode</strong></div>
+
+          <p>
+            Now that we have our variables we can use Javascript to create some things, display some things, and also, remove some
+            things. We’ll start by making a new text node. We’ll need this in order to display the text we’ve been assigning to <strong>result</strong>.
+            To do so, we’re going to just set our new variable, <strong>resultTextNode</strong>, equal to <strong>document.createTextNode(result)</strong>.
+          </p>
+
+          <div class="h4"><strong>Displaying Our Text Node</strong></div>
+
+          <p>
+            This is the moment we’ve been leading up to. The reason we previously spent all those minutes creating a placeholder.
+            It’s time to display our <strong>result</strong> to the player. This part gets a little complicated and I’m going to be keeping it relatively
+            simple for the sake of this tutorial, but know that attributes of DOM elements can also have <strong>child</strong> elements and they can nest
+            relatively deep. We’re just going to scratch the surface here, but it’s something you’ll definitely be encountering going forward
+            and something you’ll slowly learn to manage, understand, and manipulate.
+          </p>
+
+          <p>
+            To display our <strong>result</strong> value, we are going to take our <strong>resultEl</strong> element and append our <strong>resultTextNode</strong> to it as a <strong>child</strong>. In our
+            case, this is going to be really simple and smooth. <strong>JavaScript</strong> has us covered with an <strong>appendChild()</strong> function for our element.
+          </p>
+
+          <p>
+            We should end up with a tiny snippet like so:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+resultEl.appendChild(resultTextNode);
+            </code></pre>
+          </div>
+
+          <p>
+            Go ahead and test it out, then we’ll have one final hurdle to tackle.
+          </p>
+
+          <div class="h4"><strong>One Last Problem to Solve</strong></div>
+
+          <p>
+            So, if your testing went as good as I expect, you’ve noticed that the results don’t go away and in fact, they keep
+            getting added onto each other. Not to worry, We have a semi-simple solution that will clear this up no problem.
+          </p>
+
+          <p>
+            Our issue is that we are not removing the old text node before appending a new one. So we just keep on appending
+            new children to our little placeholder and making a sloppy mess for our player.
+          </p>
+
+          <p>
+            Well just like how we can append a child, we can also remove a child. This is another one of those problems that
+            may have multiple solutions. Ours is not going to be the most sophisticated, but it will work for our scenario.
+            More complex sites will likely require more complex solutions. Just something to keep in mind as we wrap up.
+          </p>
+
+          <p>
+            Our <strong>resultEl</strong> element has a fancy attribute on it called <strong>firstChild</strong>. That <strong>firstChild</strong> in our case will be our
+            <strong>resultTextNode</strong> if we’ve appended it to <strong>resultEl</strong> already. Otherwise, <strong>firstChild</strong> is nothing. We want to do two
+            things, check if there’s a <strong>firstChild</strong>, then, if there is, remove it before we try to append a new child to our <strong>resultEl</strong> element.
+          </p>
+
+          <p>
+            The first part is a simple <strong>if</strong> condition where we just want to know if <strong>resultEl.firstChild</strong> contains anything.
+            Checking <strong>if (resultEl.firstChild) {}</strong> will return <strong>true</strong> if there is a child, and <strong>false</strong> if there is not.
+          </p>
+
+          <p>
+            If we get a <strong>true</strong> result, then we want to remove that child. We can do so similarly to how we appended a
+            child with a function called <strong>removeChild()</strong>. This gets a little awkward though. We can’t just do <strong>removeChild(resultTextNode)</strong>
+            because <strong>resultTextNode</strong> is now a different value.
+          </p>
+
+          <p>
+            We have a few options. We can save the old value to another variable that we set at some point so that way we can
+            reference it when the time comes. However, we can also simply reference the old value as <strong>resultEl.firstChild</strong> since
+            that’s what we want to remove.
+          </p>
+
+          <p>
+            We end up with a funky little snippet of code that looks about like this:
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+resultTextNode = document.createTextNode(result);
+
+if (resultEl.firstChild) {
+  resultEl.removeChild(resultEl.firstChild);
+}
+
+resultEl.appendChild(resultTextNode);
+            </code></pre>
+          </div>
+
+          <p>
+            Now you should be able to go back and test again and see that the result is successfully cleared each round.
+          </p>
+
+          <div class="h4"><strong>That’s It</strong></div>
+
+          <p>
+            And that’s it. That’s the whole tutorial. It’s a lot of words for just a little bit of code, but that’s what
+            programming is all about. Taking something complicated and making something simple with it. Hopefully this
+            gives a bit of understanding on how <strong>HTML</strong> and <strong>JavaScript</strong> work together to make web pages and applications
+            function, and how the two can work together to create interesting experiences for a user, or in our case, player.
+          </p>
+
+          <p>
+            Below I’ll include the full <strong>HTML</strong> and <strong>JavaScript</strong> code in case you missed anything or something about your code
+            just isn’t working right and you need to compare it with the finished product. Now that you have something
+            functional, why not improve it. Change the inputs, add some CSS to the mix, add new options, anything you want
+            to do. The best way to learn is to explore and try to find what’s possible!
+          </p>
+
+          <div class="h4"><strong>HTML</strong></div>
+
+          <div class="text-center">
+            <pre><code class="html hljs">
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;form&gt;
+    &lt;label for="player1"&gt;Player 1: &lt;/label&gt;
+  		&lt;select name="player1" id="player1"&gt;
+        &lt;option value="Rock"&gt;Rock&lt;/option&gt;
+        &lt;option value="Paper"&gt;Paper&lt;/option&gt;
+        &lt;option value="Scissors"&gt;Scissors&lt;/option&gt;
+  	  &lt;/select&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+    &lt;label for="player2"&gt;Player 2: &lt;/label&gt;
+  		&lt;select name="player2" id="player2"&gt;
+        &lt;option value="Rock"&gt;Rock&lt;/option&gt;
+        &lt;option value="Paper"&gt;Paper&lt;/option&gt;
+        &lt;option value="Scissors"&gt;Scissors&lt;/option&gt;
+  	  &lt;/select&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+  	&lt;input id="submitId" type="button" value="Shoot!" onclick="playGame();"&gt;
+  &lt;/form&gt;
+  &lt;h2 id="resultEl"&gt;&lt;/h2&gt;
+	&lt;script type="text/javascript" src="tmp.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>JavaScript</strong></div>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+function playGame(){
+  let player1 = document.getElementById('player1').value;
+  let player2 = document.getElementById('player2').value;
+  let resultEl = document.getElementById('resultEl');
+  let resultTextNode;
+  let result = '';
+
+  if (player1 == player2) {
+    result = 'Tie!';
+  } else if (player1 == 'Rock' && player2 == 'Scissors') {
+    result = 'Player 1 Wins!';
+  } else if (player1 == 'Paper' && player2 == 'Rock') {
+    result = 'Player 1 Wins!';
+  } else if (player1 == 'Scissors' && player2 == 'Paper') {
+    result = 'Player 1 Wins!';
+  } else {
+    result = 'Player 2 Wins!';
+  }
+
+  resultTextNode = document.createTextNode(result);
+
+  if (resultEl.firstChild) {
+    resultEl.removeChild(resultEl.firstChild);
+  }
+
+  resultEl.appendChild(resultTextNode);
+}
+            </code></pre>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block">
+      <nav class="navbar sticky-bottom navbar-expand-md navbar-dark d-flex justify-content-around" style="background-color: #A79AFF;">
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:dumbcodedotdev@gmail.com"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="../../index.html">
+          <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Dumb</strong>
+          <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Code</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/moosesharkgames" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div>
+      <div class="sub-footer d-none d-lg-block">
+          <i class="fab fa-resistance" data-toggle="tooltip" data-placement="top" title="May the force be with you."></i><span class="reserved">©2022. All Rights Reserved</span>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f27865c479.js" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+    <script type="text/javascript" src="baby-age.js"></script>
+  </body>
+</html>
