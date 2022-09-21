@@ -82,6 +82,10 @@ body {
     display: inline-block;
     text-align: left;
   }
+
+  .border-img {
+    border-style: none;
+  }
 }
 
 pre {
@@ -300,4 +304,13 @@ pre {
   font-size: 0.67em;
   margin-top: 0.33em;
   margin-right: 0.33em;
+}
+
+.border-img {
+  border-style: solid;
+  border-color: #7b67ff;
+  opacity: 85;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
 }
