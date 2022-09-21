@@ -4,23 +4,23 @@
 
 <body>
   <form>
-    <label for="rps1">Player 1: </label>
-  		<select name="rps1" id="rps1">
+    <label for="player1">Player 1: </label>
+  		<select id="player1">
         <option value="Rock">Rock</option>
         <option value="Paper">Paper</option>
         <option value="Scissors">Scissors</option>
   	  </select>
       <br>
       <br>
-    <label for="rps2">Player 2: </label>
-  		<select name="rps2" id="rps2">
+    <label for="player2">Player 2: </label>
+  		<select id="player2">
         <option value="Rock">Rock</option>
         <option value="Paper">Paper</option>
         <option value="Scissors">Scissors</option>
   	  </select>
       <br>
       <br>
-  	<input id="submitId" type="button" value="Shoot!" onclick="playGame();">
+  	<input type="button" value="Shoot!" onclick="playGame();">
   </form>
   <h2 id="resultEl"></h2>
 	<script type="text/javascript" src="tmp.js"></script>

@@ -1,6 +1,6 @@
 function playGame(){
-  let player1 = document.getElementById('rps1').value;
-  let player2 = document.getElementById('rps2').value;
+  let player1 = document.getElementById('player1').value;
+  let player2 = document.getElementById('player2').value;
   let resultEl = document.getElementById('resultEl');
   let resultTextNode;
   let result = '';
@@ -11,7 +11,7 @@ function playGame(){
     result = 'Player 1 Wins!';
   } else if (player1 == 'Paper' && player2 == 'Rock') {
     result = 'Player 1 Wins!';
-  } else if (player1 == 'Scissors' && rps2 == 'Paper') {
+  } else if (player1 == 'Scissors' && player2 == 'Paper') {
     result = 'Player 1 Wins!';
   } else {
     result = 'Player 2 Wins!';
