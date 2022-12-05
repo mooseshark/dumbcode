@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../dumbcode.css">
+    <link rel="stylesheet" href="bubble-wrap.css">
+    <link rel="stylesheet" href="../code-highlight/atom-one-light.css">
+    <script src="../code-highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <title>Dumb Code</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #a79aff; color: #ffffff">
+      <a class="navbar-brand" href="../../index.html">
+        <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+        </svg>
+        <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html"><b>Posts</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../purpose.html"><b>Purpose</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../personality.html"><b>Personality</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../prosperity.html"><b>Prosperity</b></a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="../../sitemap.html"><b>Site Map</b></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/moosesharkgames" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <section class="col">
+      		<div class="h1 d-none d-lg-block" style="text-align:center"><strong>Calculate a Baby's Approximate Age</strong></div>
+          <div  class="h4 d-block d-lg-none" style="text-align:center"><strong>Calculate a Baby's Approximate Age</strong></div>
+
+          <p>
+            pop pop
+          </p>
+
+          <div id="bubble-wrap">
+
+          </div>
+
+          <div class="h4"><strong>Here it is. Enjoy!</strong></div>
+
+          <form>
+      			<label for="date selection">Select a date:</label>
+      				<input type="date" id="date" name="date"><br><br>
+
+      		  <label for="appt-time">Select a time: </label>
+      		  	<input id="time" type="time" name="time" step="1"><br><br>
+
+      		  <label for="appt-time">Select a unit of measurement: </label>
+      				<select name="measure" id="measure">
+      			    <option value="seconds">Seconds</option>
+      			    <option value="minutes">Minutes</option>
+      					<option value="moments">Moments</option> <!-- 90 sec -->
+      			    <option value="hours">Hours</option>
+      			    <option value="days">Days</option>
+      					<option value="weeks">Weeks</option>
+      					<option value="fortnights">Fortnights</option>
+      					<option value="months">Months</option>
+      					<option value="years">Years</option>
+      					<option value="protege">Protege</option>
+      					<option value="decades">Decades</option>
+      					<option value="jubilees">Jubilees</option> <!-- 25 years -->
+      					<option value="centuries">Centuries</option>
+      					<option value="millennia">Millennia</option>
+      					<option value="all">All the Units</option>
+      			  </select>
+      		</form>
+
+          <div class="table-responsive-xl">
+        		<table id="tabBody">
+        			<tr class="trSolid">
+                <th>Approximate Age</th>
+              </tr>
+              <tr id="submitRow" class="trSolid">
+                <td>
+                  <input id="submitId" type="button" class="btn btn-outline-read btn-lg btn-grid" value="Submit" onclick="submitFields();">
+                </td>
+              </tr>
+        		</table>
+          </div>
+
+          <div class="h4"><strong>The Source.</strong></div>
+
+          <p>
+            Here's all the JavaScript code. Even the sketchy way the click to
+            copy works by creating a text element, assigning it a value, copying
+            that value, then deleting the element, which is honestly more cool
+            than the actual age calculations.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+// submit all fields and start the process of calculating age
+function submitFields(){
+	resetPage();
+
+	let date = document.getElementById('date').value.split("-"),
+	 		time = document.getElementById('time').value.split(":"),
+			measure = document.getElementById('measure').value,
+			currentDateTime = Date.now();
+
+	if ((date[0] === '' || date === 'undefined') || (time[0] === '' || time == 'undefined')) {
+		alert('Invalid date or time.');
+		return;
+	}
+
+	let selectedDateTime = new Date(date[0],date[1]-1,date[2],time[0],time[1],time[2]);
+
+	if (currentDateTime < selectedDateTime) {
+		alert('Date/Time cannot be greater than the current date and time.');
+		return;
+	}
+
+	let diff = Math.abs(currentDateTime - selectedDateTime) * 0.001; //diff in seconds
+
+	switch (measure) {
+	  case 'seconds':
+			ageCell({seconds: diff});
+	    break;
+	  case 'minutes':
+			ageCell({minutes: minutes(diff)});
+	    break;
+		case 'moments':
+			ageCell({moments: moments(diff)});
+	    break;
+		case 'hours':
+			ageCell({hours: hours(diff)});
+	    break;
+		case 'days':
+			ageCell({days: days(diff)});
+	    break;
+		case 'weeks':
+			ageCell({weeks: weeks(diff)});
+	    break;
+		case 'fortnights':
+			ageCell({fortnights: fortnights(diff)});
+	    break;
+		case 'months':
+			ageCell({months: months(diff)});
+	    break;
+		case 'protege':
+			ageCell({protege: protege(diff)});
+	    break;
+		case 'years':
+			ageCell({years: years(diff)});
+	    break;
+		case 'decades':
+			ageCell({decades: decades(diff)});
+	    break;
+		case 'jubilees':
+			ageCell({jubilees: jubilees(diff)});
+	    break;
+		case 'centuries':
+			ageCell({centuries: centuries(diff)});
+	    break;
+		case 'millennia':
+			ageCell({millennia: millennia(diff)});
+	    break;
+		case 'all':
+			ageCell(all(diff));
+	    break;
+		default:
+			ageCell(all(diff));
+			break;
+		}
+}
+
+/*
+ * block of functions that determine the calculations of each age.
+ * in many cased functons call another function to get a previously determined
+ * value to be used for age calculations
+ */
+
+function minutes(diff){
+	return diff / 60;
+}
+
+function moments(diff){
+	return diff / 90;
+}
+
+function hours(diff){
+	return minutes(diff) / 60;
+}
+
+function days(diff){
+	return hours(diff) / 24;
+}
+
+function weeks(diff){
+	return days(diff) / 7;
+}
+
+function fortnights(diff){
+	return days(diff) / 14;
+}
+
+function months(diff){
+	return days(diff) / 30.42;
+}
+
+function years(diff){
+	return days(diff) / 365;
+}
+
+function protege(diff){
+	return days(diff) / 323;
+}
+
+function decades(diff){
+	return years(diff) / 10;
+}
+
+function jubilees(diff){
+	return years(diff) / 25;
+}
+
+function centuries(diff){
+	return years(diff) / 100;
+}
+
+function millennia(diff){
+	return years(diff) / 1000;
+}
+
+function all(diff){
+	return {
+		seconds: diff,
+		minutes: minutes(diff),
+		days: days(diff),
+		weeks: weeks(diff),
+		fortnights: fortnights(diff),
+		months: months(diff),
+		years: years(diff),
+		decades: decades(diff),
+		protege: protege(diff),
+		jubilees: jubilees(diff),
+		centuries: centuries(diff),
+		millennia: millennia(diff)
+	};
+}
+
+// create the cell for each age
+function ageCell(obj){
+	let i = 0,
+			cell = {
+				"age": "",
+			};
+
+	for(o in obj){
+		cell.id = i;
+		cell.age = `${obj[o]} ${o}`;
+		cell.units = o
+
+		drawAgeTable(cell);
+		i++;
+	}
+  // initializes tooltip? needed to be called to get the tool tip css to trigger
+	$('[data-toggle="tooltip"]').tooltip();
+}
+
+// create the table row and populate it with a cell
+function drawAgeTable(cell){
+	if (cell === null) return;
+
+	const tabBody=document.getElementById("tabBody");
+
+	let tableRow = tabBody.insertRow();
+	tableRow.id = cell.id;
+
+	let cell0 = tableRow.insertCell();
+
+	cell0.setAttribute('data-toggle', 'tooltip');
+	cell0.setAttribute('data-placement', 'top');
+	cell0.setAttribute('title', `Click the cell to copy the age in ${o}.`);
+	cell0.setAttribute('onclick', `copyTextArea('${cell.age}');`);
+
+  let text0 = document.createTextNode(cell.age);
+
+	cell0.appendChild(text0);
+}
+
+// reset the table when the submit button is pressed and clear all elements
+// the hard coded loop was for simlification in this case, but isn't a great idea
+function resetPage(){
+	for(let i = 0; i < 12; i++){
+		let row = document.getElementById(i);
+
+		if (row)
+    	row.parentNode.removeChild(row);
+	}
+}
+
+// create a text element, copy text, then remove the element in order to copy from a <td>
+function copyTextArea(age){
+	let text = document.createElement('input');
+	text.setAttribute('type', 'text');
+	text.value = age;
+	document.body.appendChild(text);
+	text.select();
+	document.execCommand('copy');
+	document.body.removeChild(text);
+}
+          </code></pre>
+        </div>
+
+        </section>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block">
+      <nav class="navbar sticky-bottom navbar-expand-md navbar-dark d-flex justify-content-around" style="background-color: #A79AFF;">
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:dumbcodedotdev@gmail.com"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="../../index.html">
+          <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Dumb</strong>
+          <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Code</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/moosesharkgames" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div>
+      <div class="sub-footer d-none d-lg-block">
+          <i class="fab fa-resistance" data-toggle="tooltip" data-placement="top" title="May the force be with you."></i><span class="reserved">©2022. All Rights Reserved</span>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f27865c479.js" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+    <script type="text/javascript" src="bubble-wrap.js"></script>
+  </body>
+</html>
