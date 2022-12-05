@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../dumbcode.css">
+    <link rel="stylesheet" href="peach-shift.css">
+    <link rel="stylesheet" href="../code-highlight/atom-one-light.css">
+    <script src="../code-highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <title>Dumb Code</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #a79aff; color: #ffffff">
+      <a class="navbar-brand" href="#">
+        <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+        </svg>
+        <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html"><b>Posts</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../purpose.html"><b>Purpose</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../personality.html"><b>Personality</b></a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="../../sitemap.html"><b>Site Map</b></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/DumbCodeDotDev" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <section class="col">
+      		<div class="h1 d-none d-lg-block" style="text-align:center"><strong>Convert a String to Another String Using the Bitwise XOR Operation</strong></div>
+          <div  class="h4 d-block d-lg-none" style="text-align:center"><strong>Convert a String to Another String Using the Bitwise XOR Operation</strong></div>
+
+          <p>
+            So, curiosity has gotten the best of you? You want to know what a bitwise exclusive or operator is?
+            Maybe you already know and are thinking, "This isn't how you use that"? Perhaps you just want to see how dumb this can be.
+            Please, allow me to take you on a magical journey of pointlessness and discovery.
+          </p>
+
+          <div class="h4"><strong>What even is this?</strong></div>
+
+          <p>
+            This is a demonstration of how to use the bitwise exclusive or operator to convert one string to another and the process that goes into doing so.
+          </p>
+
+          <div class="h4"><strong>Why would you ever do that?</strong></div>
+
+          <div class="text-center">
+            <img src="images\but-why-though.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            Really, you wouldn't. Or, at least I thought you wouldn't when I first wrote this. It turns out, while the way I originally approached it isn't very useful, the concepts behind
+            my approach can actually be very useful. Mainly, this serves as a way to perform low level encryption. So, let's start by breaking down the less useful way I approached the bitwise
+            exclusive or (XOR) operator, and see how my misinterpretations ended up leading to a fairly interesting discovery.
+          </p>
+
+          <p>
+            So, what are we going to be doing? We will take 2 strings, break them down to decimal values, break them down again to binary values, then use a few extra steps to rebuild
+            our initial string to the string we wish to convert it to. Sounds a little complicated?
+          </p>
+
+          <div class="h4"><strong>I don't know? That sounds pretty stupid.</strong></div>
+
+          <div class="text-center">
+            <img src="images\advanced-stupid.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            It is pretty stupid, but it turns out there's smart stuff shuffled around in all the stupid. So, let's start! What's a bitwise exclusive or operator?
+            It's purpose is to take two binary values and compare them. The return of this comparison results in a <strong>1</strong> anywhere the two binary
+            values do not match, and a <strong>0</strong> where they do. The XOR operator is signified by a caret (^) in the majority of programming languages, if not all of them.
+          </p>
+
+          <div class="h4"><strong>Alright, how about an example?</strong></div>
+
+          <p>
+            Alright, let's break this down. We'll start with 2 characters <strong>p</strong> and <strong>s</strong>. <strong>p</strong> is represented by the binary value <strong>1110000</strong>.
+            <strong>s</strong> is represented by the binary value <strong>1110011</strong>. So when we use the bitwise XOR operator, we are essentially writing it as
+            <strong>p ^ s</strong>. There is another step involved, but we'll hold off on that for now. In the meantime, we will say <strong>p ^ s</strong>, and the computer will see
+            this as <strong>1110000 ^ 1110011</strong>. The computer will then compare these 2 binary numbers to see which
+            bits are the same, and which ones are different. In this case, <strong>11100</strong> are all the same. This will produce five 0 bits. The last two bits of <strong>p</strong>
+            and <strong>s</strong> are different. This will produce two 1 bits. That makes the final return of <strong>1110000 ^ 1110011</strong> equals <strong>0000011</strong> or simply
+            <strong>11</strong>. Unfortunately, <strong>11</strong> is difficult to represent as an ASCII character as it stands for "End of Text". ASCII conversion aside, this still makes for a
+            decent example as to how bitwise XOR operates.
+          </p>
+
+          <div class="table-responsive-xl">
+            <table>
+              <th>ASCII Character and XOR Operation</th>
+              <th>Binary Value</th>
+              <tr></tr>
+              <tr>
+                <td>p</td>
+                <td>1110000</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>1110011</td>
+              </tr>
+              <tr>
+                <td>p ^ s</td>
+                <td>0000011</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="h4"><strong>That's pretty neat I guess, but I was promised string conversions!</strong></div>
+
+          <div class="text-center">
+            <img src="images\string.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            Right you are! Let's waste some time converting strings with XOR. We've got some of the building blocks in the table above, but it doesn't really paint the entire picture.
+            For the purpose of this, we're going to start with two strings that I've chosen: <strong>peach</strong> and <strong>shift</strong>. Why these two? I like Princess Peach, we're shifting
+            some bits around, they both have 5 characters. Sky's the limit here when it comes to picking reasons why.
+          </p>
+
+          <p>
+            As stated before, the XOR operator does a comparison of two binary values and returns true (1) or false (0) depending on if the bits in those two values are different or the same.
+            We have to do a little bit of hoop jumping to take a string, break it down to binary values for each individual character, then rebuild those binary values as our intended result.
+            We'll start with our strings, <strong>peach</strong> and <strong>shift</strong>. Both strings have to be broken down to individual characters. The way I've done this is using a
+            <strong>for in</strong> loop and a counter. But there's lots of other, likely better ways to do this. You could use the string <strong>.split()</strong> function or a normal <strong>for</strong>
+            loop to go over each character. It's really up to you as long as we have access to the individual characters of our two strings.
+          </p>
+
+          <p>
+            You can see in the example code below how I've structured my <strong>for in</strong> loop. The important thing to note is that my counter is set up in a manner that allows
+            it to loop back on itself, starting at 0 all over again in case the first string has more characters than the second. This doesn't affect how the bitwise XOR operator works, but
+            it will come into play when we get to the part where we use this concept to create a form of encryption.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+  let stringOne = "peach";
+  let stringTwo = "shift";
+  let counter = 0;
+  let stringTwoLen = stringTwo.length - 1;
+
+  for (let s in stringOne){
+
+    //counter is reset to 0 when the length of stringOne
+    //exceeds the length of stringTwo, forcing the
+    //conversion to start over from the beginning for the
+    //remaining characters in stringOne
+    counter === stringTwoLen ? counter = 0 : counter++;
+  }
+          </code></pre>
+        </div>
+
+          <p>
+            Now that we have both strings separated out we can start our bitwise XOR operation on the characters right? That's a big negative. Well, at least in JavaScript that's a big negative.
+            To perform a bitwise XOR operation on a string, we need to convert the string character(s) to a decimal value. A decimal value is a numerical representation for an ASCII character. In
+            our case, <strong>p</strong> will become <strong>112</strong>, and <strong>s</strong> will become <strong>115</strong>. We can find the decimal value of a character in JavaScript using
+            the <strong>.charCodeAt(index)</strong> function, where <strong>index</strong> is the location of our character in the string. Since we've broken down our strings into single characters,
+            our index will always be <strong>0</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+  for (let s in stringOne){
+    //for our "peach shift" example, we'll base this on the first
+    //characters of peach and shift.
+    //stringOne[s] = p
+    let stringOneDecimal = stringOne[s].charCodeAt(0); //112
+    //stringTwo[counter] = s
+    let stringTwoDecimal = stringTwo[counter].charCodeAt(0); //115
+
+    counter === stringTwoLen ? counter = 0 : counter++;
+  }
+            </code></pre>
+          </div>
+
+          <p>
+            Cool. We've finally reached our first XOR operation. Similar to the above example, we'll now take the decimal values, do a bitwise XOR comparison on them and receive a result. Sticking
+            with <strong>p</strong> and <strong>s</strong>, we ended up with an operation that looks like <strong>112 ^ 115</strong>. And like before, this breaks down further to
+            <strong>1110000 ^ 1110011</strong>, leaving us once again with a final result of <strong>11</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    let stringOneDecimal = stringOne[s].charCodeAt(0); //112
+    let stringTwoDecimal = stringTwo[counter].charCodeAt(0); //115
+
+    //We get our conversion decimal value for coverting
+    //stringOne to stringTwo with XOR
+    //No need to covert to binary as XOR will do this
+    //with the decimal values
+    let firstXORDecimal = stringOneDecimal ^ stringTwoDecimal; //3
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>We did it! Mission accomplished.</strong></div>
+
+          <div class="text-center">
+            <img src="images\too-soon.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            We've just gotten started with how overly complicated this gets. Now we need to take the first character of our initial string and do a secondary bitwise XOR operation with the result of
+            our first bitwise XOR operation. That's right, we're doubling down! We start with the decimal value of <strong>p</strong> from <strong>peach</strong> which is <strong>112</strong>. Next
+            We take our result from our first XOR operation <strong>11</strong>, except <strong>11</strong> is the binary value the computer sees from comparing the bits between the two decimal values.
+            What we will see is the decimal value represented by <strong>11</strong>, which is <strong>3</strong>. As stated before, <strong>11</strong> or in this case <strong>3</strong> is the
+            ASCII representation for "End of Text" which isn't really easy to show as an ASCII character. Now that we have these two decimal values, we do our second bitwise XOR operation:
+            <strong>112 ^ 3</strong>. Naturally, the computer breaks this down to a binary operation of <strong>1110000 ^ 0000011</strong> which results in <strong>1110011</strong>. And
+            you know what that converts to?
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    let stringOneDecimal = stringOne[s].charCodeAt(0); //112
+    let stringTwoDecimal = stringTwo[counter].charCodeAt(0); //115
+    let firstXORDecimal = stringOneDecimal ^ stringTwoDecimal; //3
+
+    //Now we redo the operation to get back to the decimal
+    //value from stringTwo, or the string we wish to convert to
+    let secondXORDecimal = stringOneDecimal ^ firstXORDecimal; //115
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>It's in the code example. It's 115.</strong></div>
+
+          <p>
+            THAT'S RIGHT! We're back at decimal value <strong>115</strong>. In JavaScript, we can use the string function <strong>String.fromCharCode(Decimal Value)</strong> to convert 115
+            back to the ASCII character we started with, <strong>s</strong>. And through a needlessly complicated and incredibly stupid method, we've converted one character from one string
+            to another character of another string. Now, we just repeat the process for each character. I've chosen to push each character into an array, however you may go about rebuilding the
+            converted string another way. I've used the array function <strong>join("")</strong> to recombine all of the characters back to a single string. Our end result being the
+            string we wanted to convert <strong>peach</strong> to, <strong>shift</strong>.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    //String.fromCharCode() allows us to convert the decimal back
+    //to an ASCII character
+    let convertedCharacter = String.fromCharCode(secondXORDecimal); //s
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Is there any way to visualize this process?</strong></div>
+
+          <p>
+            There sure is! I've built this working example that will allow you to view how one string is processed and converted to the other. I've also included the function I've used to
+            make the conversion happen.
+          </p>
+
+          <div class="table-responsive-xl">
+            <table id="tabBody">
+              <tr id="inputRow" class="trSolid">
+                <td colspan="6"><label for="ogString"><strong>Initial String:</strong></label>  <input type="text" id="ogString" name="ogString"></td>
+                <td colspan="6"><label for="convertString"><strong>String to Convert:</strong></label>  <input type="text" id="convertString" name="convertString"></td>
+              </tr>
+              <tr id="submitRow" class="trSolid">
+                <td colspan="12">
+                  <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="submitId" value="Submit" onclick="submitFields();">Submit</button>
+                </td>
+              </tr>
+              <tr id="stringHeaderRow" class="trSolid" style="display: none;">
+                <td colspan="6"><div class="h3">Initial String</div></td>
+                <td colspan="6"><div class="h3">Converted String</div></td>
+              </tr>
+              <tr id="stringRow" class="trSolid" style="display: none;">
+                <td id="ogStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+                <td id="covertedStringDisplay" colspan="6" style="max-width:350px; word-wrap:break-word;"></td>
+              </tr>
+              <tr id="resetRow" class="trSolid" style="display: none;">
+                <td colspan="12">
+                  <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="resetId" value="Reset" onclick="resetPage();">Reset</button>
+                </td>
+              </tr>
+              <tr id="tableHeaderRow" style="display: none;">
+                <th></th>
+                <th>Initial Character</th>
+                <th>Initial Decimal Value</th>
+                <th>Bitwise XOR of Decimal Values</th>
+                <th>Decimal Value for Convertion</th>
+                <th>Character to Convert</th>
+                <th>Initial Binary Value</th>
+                <th>Binary Value for Convertion</th>
+                <th>Bitwise XOR Returned Binary Value</th>
+                <th>Bitwise XOR Returned Decimal Value</th>
+                <th>Bitwise XOR to get Converted Decimal Value</th>
+                <th>Final Converted Character</th>
+              </tr>
+            </table>
+          </div>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    function peachShift(originalString, covertString){
+      let stringOne = originalString.toString();
+      let stringTwo = covertString.toString();
+      let counter = 0;
+      let stringTwoLen = stringTwo.length - 1;
+      let finalString = [];
+
+      for (let s in stringOne){
+        let stringOneDecimal = stringOne[s].charCodeAt(0);
+                let stringTwoDecimal = stringTwo[counter].charCodeAt(0);
+        let firstXORDecimal = stringOneDecimal ^ stringTwoDecimal;
+        let secondXORDecimal = stringOneDecimal ^ firstXORDecimal;
+        let convertedCharacter = String.fromCharCode(secondXORDecimal);
+
+        finalString.push(convertedCharacter);
+
+        counter === stringTwoLen ? counter = 0 : counter++;
+      }
+
+      return finalString.join("");
+    }
+            </code></pre>
+          </div>
+
+          <div class="h4"><strong>Wow, that's kind of dumb.</strong></div>
+
+          <p>
+            It sure is! But, remember how I mentioned the concepts behind this can be useful, particularly when it comes to encryption? Well, let's take a quick look at how we can build
+            a small encryption app using the bitwise XOR operator.
+          </p>
+
+          <div class="text-center">
+            <img src="images\interesting.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <p>
+            I won't break this down as much since the core concepts are basically the same. We will take a string and convert it using another string. However, this time we are going to be
+            taking a message we wish to encrypt, and encoding it using a password or passphrase we set. That password or passphrase will then be used to decrypt our encrypted message.
+          </p>
+
+          <p>
+            There are two big differences that will need to occur to encrypt our message. The first is that we will no longer be converting to another string. Instead we are encrypting
+            with another string. So, in the case of peach-shift, peach will still be our starting string, however shift will not be our end result. Our end result will be the ASCII
+            characters we get from the decimal number that is the result of the bitwise XOR operator. So again, we start with <strong>p</strong> or <strong>112</strong>. We will perform a
+            bitwise XOR operation with <strong>s</strong> or <strong>115</strong>, and will get the result of <strong>3</strong> or <strong>End of Text</strong>.
+          </p>
+
+          <p>
+            Now for the second change. Remember how I previously mentioned that <strong>End of Text</strong> was difficult to represent as an ASCII character? Well 3 isn't the only decimal
+            that is hard to represent as an ASCII character. 0 through 31 are sometimes referred to as <strong>control characters</strong>, which typically perform some sort of control
+            operation and don't really have a way to be easily represented as readable text. That's all well and good for encryption, however it poses a large problem for decryption.
+          </p>
+
+          <p>
+            It's difficult to decrypt an ASCII character that has no visible representation. So, the solution I came up with was to multiply the decimal character by 10 before converting
+            it back to ASCII. That allows us to have a viewable character to copy and paste and send as an encrypted message, and it gives us a way to reverse the process to decrypt the
+            message.
+          </p>
+
+          <p>
+            Here's a look at the encryption function I wrote. If you compare it to the peach shift function, you'll note that they are nearly identical.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    function peachEncrypt(){
+      let message = document.getElementById('originalMessage').value;
+    	let key = document.getElementById('encryptionKey').value;
+      let messageString = message.toString();
+      let keyString = key.toString();
+      let counter = 0;
+      let keyLen = keyString.length - 1;
+      let finalString = [];
+
+      for (let s in messageString){
+        let messageStringDecimal = messageString[s].charCodeAt(0);
+        let shifted = messageStringDecimal * 10;
+        let keyStringDecimal = keyString[counter].charCodeAt(0);
+        let firstXORDecimal = shifted ^ keyStringDecimal;
+        let convertedCharacter = String.fromCharCode(firstXORDecimal);
+
+        finalString.push(convertedCharacter);
+
+        counter === keyLen ? counter = 0 : counter++;
+      }
+
+      return finalString.join("");
+    }
+            </code></pre>
+          </div>
+
+          <p>
+            And here's a functioning version of the encryption app.
+          </p>
+
+          <div class="d-none d-lg-block">
+            <div class="table-responsive-xl">
+              <table id="tabBody">
+                <tr id="inputRow" class="trSolid">
+          				<td><label for="originalMessage"><strong>Original Message</strong></label>  <textarea id="originalMessage" name="originalMessage" rows="4" cols="50"></textarea></td>
+          				<td rowspan="3">
+                    <label for="encryptedMessage"><strong>Encrypted Message</strong></label>
+                    <textarea id="encryptedMessage" name="encryptedMessage" rows="9" cols="50" class="clickCopy" onclick="copyTextArea(this.id)"></textarea>
+                  </td>
+          			</tr>
+                <tr class="trSolid">
+                  <td><label for="password"><strong>Password</strong></label>  <input type="text" id="encryptionKey" name="encryptionKey"></td>
+                </tr>
+          			<tr id="submitRow" class="trSolid">
+          				<td>
+                    <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="encryptId" value="Encrypt" onclick="peachEncrypt();">Encrypt</button>
+          				</td>
+          			</tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="d-block d-lg-none">
+            <div class="table-responsive-xl">
+              <table id="tabBody">
+                <tr id="inputRow" class="trSolid">
+                  <td><label for="originalMessage" style="display:block;"><strong>Original Message</strong></label>  <textarea id="originalMessageMobile" name="originalMessageMobile" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr class="trSolid">
+                  <td><label for="password" style="display:block;"><strong>Password</strong></label>  <input type="text" id="encryptionKeyMobile" name="encryptionKeyMobile"></td>
+                </tr>
+                <tr id="submitRow" class="trSolid">
+                  <td>
+                    <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="encryptMobileId" value="Encrypt" onclick="peachEncryptMobile();">Encrypt</button>
+                  </td>
+                </tr>
+                <tr class="trSolid">
+                  <td>
+                    <label for="encryptedMessage" style="display:block;"><strong>Encrypted Message</strong></label>
+                    <textarea id="encryptedMessageMobile" name="encryptedMessageMobile" rows="4" cols="30" class="clickCopy" onclick="copyTextArea(this.id)"></textarea>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="h4"><strong>Cool, so how do we decrypt the message?</strong></div>
+
+          <p>
+            It's basically the exact same process. The major difference is that for encryption, we want to shift our decimal value by multiplying it after we've done our
+            bitwise XOR operation. For decryption, we want to divide the decimal value by 10 before we do the bitwise XOR operation. This allows us to get the decimal value
+            of each character from the original message. Then all we have to do is convert from decimal to ASCII and we have the original message again.
+          </p>
+
+          <p>
+            Here's my decryption function. Again, it's very similar to the peach shift function, and almost identical to the encryption function.
+          </p>
+
+          <div class="text-center">
+            <pre><code class="javascript hljs">
+    function peachDecrypt(){
+      let message = document.getElementById('messageToDecrypt').value;
+    	let key = document.getElementById('decryptionKey').value;
+      let messageString = message.toString();
+      let keyString = key.toString();
+      let counter = 0;
+      let keyLen = keyString.length - 1;
+      let finalString = [];
+
+      for (let s in messageString){
+        let messageStringDecimal = messageString[s].charCodeAt(0);
+        let keyStringDecimal = keyString[counter].charCodeAt(0);
+        let firstXORDecimal = messageStringDecimal ^ keyStringDecimal;
+    		let shifted = firstXORDecimal / 10;
+        let convertedCharacter = String.fromCharCode(shifted);
+
+        finalString.push(convertedCharacter);
+
+        counter === keyLen ? counter = 0 : counter++;
+      }
+
+      return finalString.join("");
+    }
+            </code></pre>
+          </div>
+
+          <p>
+            And here's a functioning version of the decryption app.
+          </p>
+
+          <div class="d-none d-lg-block">
+            <div class="table-responsive-xl">
+              <table id="tabBody">
+                <tr id="inputRow" class="trSolid">
+          				<td><label for="messageToDecrypt"><strong>Encrypted Message</strong></label>  <textarea id="messageToDecrypt" name="messageToDecrypt" rows="4" cols="50"></textarea></td>
+          				<td rowspan="3">
+                    <label for="decryptedMessage"><strong>Decrypted Message</strong></label>
+                    <textarea id="decryptedMessage" name="decryptedMessage" rows="9" cols="50" class="clickCopy" onclick="copyTextArea(this.id)"></textarea>
+                  </td>
+          			</tr>
+                <tr class="trSolid">
+                  <td><label for="password"><strong>Password</strong></label>  <input type="text" id="decryptionKey" name="decryptionKey"></td>
+                </tr>
+          			<tr id="submitRow" class="trSolid">
+          				<td>
+                    <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="decryptId" value="Decrypt" onclick="peachDecrypt();">Decrypt</button>
+          				</td>
+          			</tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="d-block d-lg-none">
+            <div class="table-responsive-xl">
+              <table id="tabBody">
+                <tr id="inputRow" class="trSolid">
+                  <td><label for="Original Message" style="display:block;"><strong>Encrypted Message</strong></label>  <textarea id="messageToDecryptMobile" name="messageToDecryptMobile" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr class="trSolid">
+                  <td><label for="password" style="display:block;"><strong>Password</strong></label>  <input type="text" id="decryptionKeyMobile" name="decryptionKeyMobile"></td>
+                </tr>
+                <tr id="submitRow" class="trSolid">
+                  <td>
+                    <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="decryptMobileId" value="Decrypt" onclick="peachDecryptMobile();">Decrypt</button>
+                  </td>
+                </tr>
+                <tr class="trSolid">
+                  <td>
+                    <label for="decryptedMessage" style="display:block;"><strong>Decrypted Message</strong></label>
+                    <textarea id="decryptedMessageMobile" name="decryptedMessageMobile" rows="4" cols="30" class="clickCopy" onclick="copyTextArea(this.id)"></textarea>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="h4"><strong>Not bad. Not bad at all.</strong></div>
+
+          <p>
+            I don't think so. It actually turned out to be something kind of cool when all is said and done. There's still a lot of room for tweaking, improving, and modifying
+            to build a better encryption app, or maybe something else new and interesting with the bitwise exclusive or operator. Hopefully reading through all of this has been
+            somewhat informative. Most importantly, I hope this serves as an example that it doesn't matter what you set out to code. Even the dumbest idea can lead to some cool and
+            interesting discoveries.
+          </p>
+
+          <p>
+            So, keep coding, and keep having fun while you do it!
+          </p>
+
+
+
+        </section>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block">
+      <nav class="navbar sticky-bottom navbar-expand-md navbar-dark d-flex justify-content-around" style="background-color: #A79AFF;">
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:dumbcodedotdev@gmail.com"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="#">
+          <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 1a1 1 0 00-1 1v1a1 1 0 001 1H3v9a2 2 0 002 2h6a2 2 0 002-2V4h.5a1 1 0 001-1V2a1 1 0 00-1-1H10a1 1 0 00-1-1H7a1 1 0 00-1 1H2.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM8 5a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 018 5zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Dumb</strong>
+          <svg class="bi bi-code-slash" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+          </svg>
+          <strong>Code</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="tw-ic mr-3" style="color:white;" role="button" href="https://twitter.com/DumbCodeDotDev" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div>
+      <div class="sub-footer d-none d-lg-block">
+          <i class="fab fa-resistance" data-toggle="tooltip" data-placement="top" title="May the force be with you."></i>
+      </div> <!---©2020. All Rights Reserved --->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f27865c479.js" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+    <script type="text/javascript" src="peach-shift.js"></script>
+    <script type="text/javascript" src="peach-encrypt.js"></script>
+  </body>
+</html>
