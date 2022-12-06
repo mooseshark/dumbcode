@@ -1,7 +1,9 @@
 /*https://stackoverflow.com/questions/37373734/fully-circular-buttons-with-dynamic-size*/
 .round-button{
-  min-width: 60px;
-  max-width:120px;
+  /*min-width: 60px;
+  max-width:60px;*/
+  height: 30px;
+  width: 30px;
   text-decoration: none;
   display: inline-block;
   outline: none;
@@ -9,10 +11,11 @@
   border-style: none;
   color: white;
   background-color: #3498db;
-  border-radius: 100%;
+  border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding:0;
+  padding: 5px;
+  margin: 5px;
 }
 .round-button:before {
   content:'';
@@ -29,51 +32,32 @@ span {
   background-color: #2980b9;
 }
 
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-th {
-  padding: 8px;
+.round-button-popped{
+  /*min-width: 60px;
+  max-width:60px;*/
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: #000000;
+  border-radius: 50%;
+  overflow: none;
   text-align: center;
-  border: 1px solid #000;
-  background-color: #77dfff;
-  width: 120px
+  padding: 5px;
+  margin: 5px;
 }
-
-tr:hover {
-  background-color: #ffff99;
+.round-button-popped:before {
+  content:'';
+  display:inline-block;;
+  vertical-align:middle;
+  padding-top:100%;
 }
-
-tr:nth-child(even):hover {
-  background-color: #ffff99;
-}
-
-tr:nth-child(even) {background-color: #77ffdb;}
-
-.trSolid:hover {
-  background-color: #fff
-}
-
-.trSolid:nth-child(even):hover {
-  background-color: #fff
-}
-
-.trSolid:nth-child(even) {background-color: #fff;}
-
-td {
-  border: 1px solid #000;
-  text-align: center
-}
-
-.btn-grid {
-  float: center;
-  width: 320px;
-  font-weight:bold;
-  margin: 10px 0px 10px 0px;
+.round-button-popped:active{
+  background-color: #000000;
 }
 
 [type^="text"] {

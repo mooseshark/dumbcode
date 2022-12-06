@@ -5,81 +5,26 @@ document.onreadystatechange = function () {
 };
 
 function generateSheet() {
-	let btn = document.createElement('input');
-	btn.setAttribute('type', 'button');
-	btn.setAttribute('class', 'round-button');
-	wrap = document.getElementById("bubble-wrap")
-	wrap.appendChild(btn)
 
+	for (let i = 0;i < 101;i++){
+		let btn = document.createElement('input');
+		btn.setAttribute('type', 'button');
+		btn.setAttribute('id', i);
+		btn.setAttribute('class', 'round-button');		
+		btn.addEventListener('click', popBubble);
+		
+		wrap = document.getElementById("bubble-wrap")
+		wrap.appendChild(btn)
+	}
 }
 
-function submitFields(){
-	resetPage();
+function popBubble() {
+	console.log('pop pop');
 
-	let date = document.getElementById('date').value.split("-"),
-	 		time = document.getElementById('time').value.split(":"),
-			measure = document.getElementById('measure').value,
-			currentDateTime = Date.now();
+	let audio = new Audio(`audio/${assignAudio()}`);
 
-	if ((date[0] === '' || date === 'undefined') || (time[0] === '' || time == 'undefined')) {
-		alert('Invalid date or time.');
-		return;
-	}
-
-	let selectedDateTime = new Date(date[0],date[1]-1,date[2],time[0],time[1],time[2]);
-
-	if (currentDateTime < selectedDateTime) {
-		alert('Date/Time cannot be greater than the current date and time.');
-		return;
-	}
-
-	let diff = Math.abs(currentDateTime - selectedDateTime) * 0.001; //diff in seconds
-
-	switch (measure) {
-	  case 'seconds':
-			ageCell({seconds: diff});
-	    break;
-		default:
-			ageCell({seconds: diff});
-			break;
-		}
-}
-
-function ageCell(obj){
-	let i = 0,
-			cell = {
-				"age": "",
-			};
-
-	for(o in obj){
-		cell.id = i;
-		cell.age = `${obj[o]} ${o}`;
-		cell.units = o
-
-		drawAgeTable(cell);
-		i++;
-	}
-	$('[data-toggle="tooltip"]').tooltip();
-}
-
-function drawAgeTable(cell){
-	if (cell === null) return;
-
-	const tabBody=document.getElementById("tabBody");
-
-	let tableRow = tabBody.insertRow();
-	tableRow.id = cell.id;
-
-	let cell0 = tableRow.insertCell();
-
-	cell0.setAttribute('data-toggle', 'tooltip');
-	cell0.setAttribute('data-placement', 'top');
-	cell0.setAttribute('title', `Click the cell to copy the age in ${o}.`);
-	cell0.setAttribute('onclick', `copyTextArea('${cell.age}');`);
-
-  let text0 = document.createTextNode(cell.age);
-
-	cell0.appendChild(text0);
+	audio.play();
+	this.setAttribute('class', 'round-button-popped');
 }
 
 function resetPage(){
@@ -91,13 +36,29 @@ function resetPage(){
 	}
 }
 
-// create a text element, copy text, then remove the element in order to copy from a <td>
-function copyTextArea(age){
-	let text = document.createElement('input');
-	text.setAttribute('type', 'text');
-	text.value = age;
-	document.body.appendChild(text);
-	text.select();
-	document.execCommand('copy');
-	document.body.removeChild(text);
+function assignAudio() {
+	const bubbles = ['bubble_cork_1.mp3','bubble_cork_2.mp3','bubble_crack_pop_1.mp3','bubble_crack_pop_2.mp3','bubble_double_drip_1.mp3','bubble_light_pop_1.mp3','bubble_light_pop_2.mp3','bubble_light_pop_3.mp3','bubble_pop_1.mp3','bubble_pop_2.mp3','bubble_pop_3.mp3','bubble_pop_woosh_1.mp3'];
+	const meows = [];
+
+	playAudio = shuffleAudio(bubbles);
+
+	return playAudio[0];
+  }
+
+function shuffleAudio(array) {
+	let currentIndex = array.length,  randomIndex;
+
+	// While there remain elements to shuffle.
+	while (currentIndex != 0) {
+
+		// Pick a remaining element.
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[array[currentIndex], array[randomIndex]] = [
+		array[randomIndex], array[currentIndex]];
+	}
+
+	return array;
 }
