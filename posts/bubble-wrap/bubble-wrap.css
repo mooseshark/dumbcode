@@ -1,5 +1,5 @@
 /*https://stackoverflow.com/questions/37373734/fully-circular-buttons-with-dynamic-size*/
-.round-button{
+.round-button-blue{
   /*min-width: 60px;
   max-width:60px;*/
   height: 30px;
@@ -17,19 +17,42 @@
   padding: 5px;
   margin: 5px;
 }
-.round-button:before {
+.round-button-blue:before {
   content:'';
   display:inline-block;;
   vertical-align:middle;
   padding-top:100%;
 }
-span {
-  display:inline-block;
-  vertical-align:middle;
-  max-width:90%;
-}
-.round-button:active{
+.round-button-blue:active{
   background-color: #2980b9;
+}
+
+.round-button-purple{
+  /*min-width: 60px;
+  max-width:60px;*/
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: #a36ec4;
+  border-radius: 50%;
+  overflow: none;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+.round-button-purple:before {
+  content:'';
+  display:inline-block;;
+  vertical-align:middle;
+  padding-top:100%;
+}
+.round-button-purple:active{
+  background-color: #a36ec4;
 }
 
 .round-button-popped{
@@ -111,3 +134,4 @@ textarea {
    opacity: 1.0;
    background-color: #d9ffc2;
  }
+ 

@@ -64,8 +64,22 @@
           <div  class="h4 d-block d-lg-none" style="text-align:center"><strong>Pop Some Virtual Bubble Wrap</strong></div>
 
           <p>
-            pop pop
+            pop pop 
           </p>
+          
+          <button type="button" class="btn btn-outline-read btn-lg btn-grid" id="resetId" value="Reset" onclick="resetPage();">Reset</button>
+          
+          <span class="btn-group btn-group-toggle" data-toggle="buttons" id="button-toggle-group">
+            <label class="btn btn-outline-read btn-lg btn-grid active">
+              <input type="radio" name="options" id="blue" styletheme="round-button-blue" onchange="selectTheme(this.id)" autocomplete="off" checked> Blue
+            </label>
+            <label class="btn btn-outline-read btn-lg btn-grid">
+              <input type="radio" name="options" id="purple" styletheme="round-button-purple" onchange="selectTheme(this.id)" autocomplete="off"> Purple
+            </label>
+            <label class="btn btn-outline-read btn-lg btn-grid">
+              <input type="radio" name="options" id="cat" styletheme="round-button-purple" onchange="selectTheme(this.id)" autocomplete="off"> Cat
+            </label>
+          </span>
 
           <div id="bubble-wrap">
 
