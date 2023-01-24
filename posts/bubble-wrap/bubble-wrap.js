@@ -1,6 +1,6 @@
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
-    generateSheet('traditional','round-button-traditional');
+    generateSheet('traditional','round-button-traditional',100);
   }
 };
 
@@ -10,18 +10,24 @@ document.onreadystatechange = function () {
 function selectTheme(audioTheme) {
 	let styleTheme = document.getElementById(audioTheme).getAttribute('styletheme')
 	let selectedTheme = audioTheme || 'traditional';
+	let sheetSize = document.getElementById(audioTheme).getAttribute('sheetsize')
 
-	resetPage(selectedTheme,styleTheme);
+	resetPage(selectedTheme,styleTheme,sheetSize);
 }
 
-function generateSheet(audioTheme, styleTheme) {
+function generateSheet(audioTheme, styleTheme, sheetSize) {
 
-	for (let i = 0;i < 101;i++){
+	for (let i = 0;i < sheetSize;i++){
 		let btn = document.createElement('button');
 		btn.setAttribute('type', 'button');
 		btn.setAttribute('id', i);
 		btn.setAttribute('audiotheme', assignAudio(audioTheme))
-		btn.setAttribute('class', styleTheme);		
+		btn.setAttribute('class', styleTheme);	
+
+		if (i%10 === 0 && parseInt(i.toString().substring(0,1))%2) {
+			btn.style.marginLeft = '16px'
+		}
+
 		btn.addEventListener('click', popBubble);
 
 		if (audioTheme === 'cat'){		
@@ -46,8 +52,8 @@ function popBubble() {
 	this.removeEventListener('click', popBubble);
 }
 
-function resetPage(selectedTheme,styleTheme){
-	if (!selectedTheme || !styleTheme){
+function resetPage(selectedTheme,styleTheme,sheetSize){
+	if (!selectedTheme || !styleTheme || !sheetSize){
 
 		let themeButtonToggleGroup = document.getElementById("button-toggle-group").children;
 
@@ -60,6 +66,7 @@ function resetPage(selectedTheme,styleTheme){
 
 		selectedTheme = el.childNodes[1].getAttribute('id');
 		styleTheme = el.childNodes[1].getAttribute('styletheme');
+		sheetSize = el.childNodes[1].getAttribute('sheetsize');
 	}
 
 	
@@ -73,7 +80,7 @@ function resetPage(selectedTheme,styleTheme){
 	}
 
 	if (document.getElementById("bubble-wrap").children.length === 0)
-		generateSheet(selectedTheme,styleTheme)
+		generateSheet(selectedTheme,styleTheme,sheetSize)
 }
 
 /*

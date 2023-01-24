@@ -42,13 +42,19 @@
   background-color: #68899f;
   padding: 1px;
   margin: 1px;
-  border: 1px solid #fff;
   cursor: pointer;
   letter-spacing: 2px;
   position:relative;
   border-radius: 50%;
   overflow: none;  
-  opacity: 0.3;
+  opacity: 0.3;  
+  outline-color: #192126;
+  outline-style: dotted;
+  outline-width: 1px;
+  outline: 5px auto #192126;
+  outline-color: #192126;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 .round-button-traditional-popped:before {
@@ -80,8 +86,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-blue:before {
   content:'';
@@ -108,8 +114,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-blue-popped:before {
   content:'';
@@ -137,8 +143,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-purple:before {
   content:'';
@@ -165,8 +171,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-purple-popped:before {
   content:'';
@@ -197,8 +203,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-magnitude:before {
   content:'';
@@ -226,8 +232,8 @@
   border-radius: 50%;
   overflow: none;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 1px;
 }
 .round-button-magnitude-popped:before {
   content:'';
@@ -237,6 +243,10 @@
 }
 .round-button-magnitude-popped:active{
   background-color: #000000;
+}
+
+.bubble-wrap {
+  width: 350px;
 }
 
 [type^="text"] {
