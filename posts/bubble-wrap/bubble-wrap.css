@@ -70,10 +70,8 @@
   border-radius: 50%;
 }
 
-/* Blue */
-.round-button-blue{
-  /*min-width: 60px;
-  max-width:60px;*/
+/* Fun */
+.round-button-fun{
   height: 30px;
   width: 30px;
   text-decoration: none;
@@ -82,26 +80,23 @@
   cursor: pointer;
   border-style: none;
   color: white;
-  background-color: #3498db;
   border-radius: 50%;
   overflow: none;
   text-align: center;
   padding: 1px;
   margin: 1px;
 }
-.round-button-blue:before {
+.round-button-fun:before {
   content:'';
   display:inline-block;;
   vertical-align:middle;
   padding-top:100%;
 }
-.round-button-blue:active{
+.round-button-fun:active{
   background-color: #2980b9;
 }
 
-.round-button-blue-popped{
-  /*min-width: 60px;
-  max-width:60px;*/
+.round-button-fun-popped{
   height: 30px;
   width: 30px;
   text-decoration: none;
@@ -110,53 +105,43 @@
   cursor: pointer;
   border-style: none;
   color: white;
-  background-color: #000000;
+  background-color: #2bfff4 !important;
   border-radius: 50%;
   overflow: none;
   text-align: center;
   padding: 1px;
   margin: 1px;
+  outline-color: #3ca0de;
+  outline-style: dotted;
+  outline-width: 1px;
+  outline: 5px auto #3ca0de;
+  outline-color: #3ca0de;
+  outline-style: auto;
+  outline-width: 5px;
 }
-.round-button-blue-popped:before {
+.round-button-fun-popped:before {
   content:'';
   display:inline-block;;
   vertical-align:middle;
   padding-top:100%;
 }
-.round-button-blue-popped:active{
-  background-color: #000000;
+.round-button-fun-popped:active{
+  background-color: #ff9d9d;
 }
 
-/* Purple */
-.round-button-purple{
-  /*min-width: 60px;
-  max-width:60px;*/
-  height: 30px;
-  width: 30px;
-  text-decoration: none;
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  border-style: none;
-  color: white;
-  background-color: #a36ec4;
-  border-radius: 50%;
-  overflow: none;
-  text-align: center;
-  padding: 1px;
-  margin: 1px;
-}
-.round-button-purple:before {
-  content:'';
-  display:inline-block;;
-  vertical-align:middle;
-  padding-top:100%;
-}
-.round-button-purple:active{
-  background-color: #a36ec4;
+/* Cats */
+.round-button-cat {
+  -webkit-appearance: button;
+  background-color: #f7ee8c;
 }
 
-.round-button-purple-popped{
+.round-button-cat-popped{
+  -webkit-appearance: button;
+  background-color: #ffffff;
+}
+
+/* All */
+.round-button-all{
   /*min-width: 60px;
   max-width:60px;*/
   height: 30px;
@@ -167,27 +152,51 @@
   cursor: pointer;
   border-style: none;
   color: white;
-  background-color: #000000;
+  background-color: #23a13e;
   border-radius: 50%;
   overflow: none;
   text-align: center;
   padding: 1px;
   margin: 1px;
 }
-.round-button-purple-popped:before {
+.round-button-all:before {
   content:'';
   display:inline-block;;
   vertical-align:middle;
   padding-top:100%;
 }
-.round-button-purple-popped:active{
-  background-color: #000000;
+.round-button-all:active{
+  background-color: #ffffff;
+}
+
+.round-button-all-popped{
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: #ff9d9d;
+  border-radius: 50%;
+  overflow: none;
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+}
+.round-button-all-popped:before {
+  content:'';
+  display:inline-block;;
+  vertical-align:middle;
+  padding-top:100%;
+}
+.round-button-all-popped:active{
+  background-color: #ff9d9d;
 }
 
 /* Magnitude */
 .round-button-magnitude{
-  /*min-width: 60px;
-  max-width:60px;*/
   height: 60px;
   width: 90px;
   text-decoration: none;
@@ -198,8 +207,6 @@
   color: white;
   background-color: #3498db;
   background-image: url("images/magnitude100.png");
-  /* background-size: cover; */
-  /* background-image: 'images/magnitude100.png'; */
   border-radius: 50%;
   overflow: none;
   text-align: center;
@@ -217,8 +224,6 @@
 }
 
 .round-button-magnitude-popped{
-  /*min-width: 60px;
-  max-width:60px;*/
   height: 60px;
   width: 90px;
   text-decoration: none;
@@ -247,6 +252,7 @@
 
 .bubble-wrap {
   width: 350px;
+  padding-top: 10px;
 }
 
 [type^="text"] {

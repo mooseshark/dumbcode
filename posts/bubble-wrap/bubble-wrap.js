@@ -16,6 +16,9 @@ function selectTheme(audioTheme) {
 }
 
 function generateSheet(audioTheme, styleTheme, sheetSize) {
+	let count = 0;
+	let rainbow = ['#FFADAD', '#FFD6A5', '#FDFFB6', '#CAFFBF', '#9BF6FF', '#A0C4FF', '#BDB2FF', '#FFC6FF', '#FFFFFC'];
+	let wrap = document.getElementById('bubble-wrap')
 
 	for (let i = 0;i < sheetSize;i++){
 		let btn = document.createElement('button');
@@ -24,8 +27,24 @@ function generateSheet(audioTheme, styleTheme, sheetSize) {
 		btn.setAttribute('audiotheme', assignAudio(audioTheme))
 		btn.setAttribute('class', styleTheme);	
 
-		if (i%10 === 0 && parseInt(i.toString().substring(0,1))%2) {
+		if (i%10 === 0 && parseInt(i.toString().substring(0,1))%2 && audioTheme != 'magnitude') {
 			btn.style.marginLeft = '16px'
+		}
+
+		if (i%3 === 0 && (i/3)%2 === 0 && audioTheme == 'magnitude') {
+			btn.style.marginLeft = '32px'
+		} else if(count != 2 && audioTheme == 'magnitude') {
+			count++;
+		}
+
+		if (audioTheme == 'fun') {
+			btn.style.backgroundColor = rainbow[count];
+
+			count++;
+
+			if(count === 7){
+				count = 0;
+			}			
 		}
 
 		btn.addEventListener('click', popBubble);
@@ -35,8 +54,13 @@ function generateSheet(audioTheme, styleTheme, sheetSize) {
 			cat.setAttribute('class', 'fa-solid fa-cat');
 			btn.appendChild(cat);
 		}
-		
-		wrap = document.getElementById("bubble-wrap")
+
+		if (audioTheme === 'all'){		
+			let all = document.createElement('i');
+			all.setAttribute('class', 'fas fa-question');
+			btn.appendChild(all);
+		}
+
 		wrap.appendChild(btn)
 	}
 }
@@ -88,27 +112,27 @@ function resetPage(selectedTheme,styleTheme,sheetSize){
 */
 function assignAudio(theme) {
 	const traditional = ['bubble_crack_pop_2.mp3'];
-	const blue = ['bubble_cork_1.mp3','bubble_cork_2.mp3','bubble_crack_pop_1.mp3','bubble_crack_pop_2.mp3','bubble_double_drip_1.mp3','bubble_light_pop_1.mp3','bubble_light_pop_2.mp3','bubble_light_pop_3.mp3','bubble_pop_1.mp3','bubble_pop_2.mp3','bubble_pop_3.mp3','bubble_pop_woosh_1.mp3'];
+	const fun = ['bubble_cork_1.mp3','bubble_cork_2.mp3','bubble_crack_pop_1.mp3','bubble_crack_pop_2.mp3','bubble_double_drip_1.mp3','bubble_light_pop_1.mp3','bubble_light_pop_2.mp3','bubble_light_pop_3.mp3','bubble_pop_1.mp3','bubble_pop_2.mp3','bubble_pop_3.mp3','bubble_pop_woosh_1.mp3'];
 	const cat = ['kitten_meow_1.mp3','kitten_meow_2.mp3','kitten_meow_3.mp3','long_meow_1.mp3','meow_1.mp3','meow_2.mp3','meow_3.mp3','meow_4.mp3','meow_5.mp3','meow_6.mp3','meow_7.mp3','meow_angry_1.mp3','meow_angry_2.mp3','meow_angry_3.mp3','perfect_meow_1.mp3','purr_meow_1.mp3','purr_meow_2.mp3','purr_meow_3.mp3'];
-	const purple = blue.concat(cat);
 	const magnitude = ['magnitude_pop_pop.mp3']
+	const all = fun.concat(cat).concat(magnitude);
 	let audioTheme;
 
 	switch(theme){
 		case 'traditional':
 			audioTheme = traditional;
 			break;
-		case 'blue':
-			audioTheme = blue;
+		case 'fun':
+			audioTheme = fun;
 			break;
 		case 'cat':
 			audioTheme = cat;
 			break;
-		case 'purple':
-			audioTheme = purple;
-			break;
 		case 'magnitude':
 			audioTheme = magnitude;
+			break;
+		case 'all':
+			audioTheme = all;
 			break;
 		default:
 			audioTheme = traditional;
