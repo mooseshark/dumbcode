@@ -76,7 +76,7 @@ function popBubble() {
 	this.removeEventListener('click', popBubble);
 }
 
-function resetPage(selectedTheme,styleTheme,sheetSize){
+function resetPage(selectedTheme,styleTheme,sheetSize) {
 	if (!selectedTheme || !styleTheme || !sheetSize){
 
 		let themeButtonToggleGroup = document.getElementById("button-toggle-group").children;

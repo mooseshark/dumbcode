@@ -306,4 +306,13 @@ textarea {
    opacity: 1.0;
    background-color: #d9ffc2;
  }
+
+.bubble-wrap {
+  margin-left: 10px;
+}
  
+ @media (max-width: 767.98px) {
+  .btn-group-lg>.btn, .btn-lg {
+    font-size: 0.75rem;
+  }
+}
