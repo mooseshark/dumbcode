@@ -143,7 +143,7 @@ function submitFields(){
 
 	let selectedDateTime = new Date(date[0],date[1]-1,date[2],time[0],time[1],time[2]);
 
-	if (currentDateTime < selectedDateTime) {
+	if (currentDateTime &lt; selectedDateTime) {
 		alert('Date/Time cannot be greater than the current date and time.');
 		return;
 	}
@@ -320,7 +320,7 @@ function drawAgeTable(cell){
 // reset the table when the submit button is pressed and clear all elements
 // the hard coded loop was for simlification in this case, but isn't a great idea
 function resetPage(){
-	for(let i = 0; i < 12; i++){
+	for(let i = 0; i &lt; 12; i++){
 		let row = document.getElementById(i);
 
 		if (row)
