@@ -1,8 +1,3 @@
-.stretch-card>.card {
-    width: 100%;
-    min-width: 100%
-}
-
 body {
     background-color: #f9f9fa
 }
@@ -204,66 +199,29 @@ pre {
 .flex {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto
+    flex: 1 1 auto;
 }
 
 @media (max-width:991.98px) {
     .padding {
-        padding: 1.5rem
+        padding: 1.5rem;
     }
 }
 
 @media (max-width:767.98px) {
     .padding {
-        padding: 1rem
+        padding: 1rem;
     }
 }
 
 .padding {
-    padding: 3rem
-}
-
-.card {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none
-}
-
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid #3da5f;
-    border-radius: 0;
-}
-
-.card .card-body {
-    padding: 1.25rem 1.75rem
-}
-
-.card .card-title {
-    color: #000000;
-    margin-bottom: 0.625rem;
-    text-transform: capitalize;
-    font-size: 0.875rem;
-    font-weight: 500
-}
-
-.card .card-description {
-    margin-bottom: .875rem;
-    font-weight: 400;
-    color: #76838f
+    padding: 3rem;
 }
 
 .btn.btn-social-icon {
     width: 50px;
     height: 50px;
-    padding: 0
+    padding: 0;
 }
 
 .template-demo>.btn {
@@ -275,27 +233,27 @@ pre {
 }
 
 .btn.btn-rounded {
-    border-radius: 50px
+    border-radius: 50px;
 }
 .btn-outline-twitter {
     border: 1px solid #2caae1;
-    color: #2caae1
+    color: #2caae1;
 }
 
 .btn-outline-twitter:hover {
     background: #2caae1;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .btn-twitter {
     background: #2caae1;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .btn-twitter:hover,
 .btn-twitter:focus {
     background: #1b8dbf;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .reserved {
