@@ -1,0 +1,37 @@
+<button type="button" class="btn btn-outline-read btn-lg btn-grid" id="submitId" value="Submit" onclick="function hi(){alert('Hi!')};hi()">Submit</button>
+
+<button type="button" class="btn btn-outline-read btn-lg btn-grid" id="submitId" value="Submit" onclick="function hi(){alert('Hi!')};hi()">Submit</button>
+
+
+<script type="text/javascript">resetPage()</script>
+
+
+<script type="text/javascript">function resetPage(){ console.log('yaaa'); } document.getElementById(resetId).set('onclick') = resetPage();</script>
+
+
+<script type="text/javascript">
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+};
+
+docReady(function() {
+    console.log('bitch');
+});
+</script>
+
+<script type="text/javascript">document.getElementById('resetId').setAttribute("onclick","()=> alert('pow')")</script>removeChild
+
+document.getElementById('resetId').setAttribute("onclick","function p(){ console.log(document.getElementById('tabBody').innerHtml); }p();")
+
+document.getElementById('resetId').setAttribute("onclick","function p(){ document.getElementById('tbody').removeChild(tabBody)); }p();")
+
+<button type="button" class="btn btn-outline-read btn-lg btn-grid" id="submitId" value="Submit" onclick="function hi(){divs = document.getElementsByTagName('div'); for (d in divs) {console.log(d);divs[d].innerHTML = '';divs[d].innerText = ''}};hi()">Submit</button>
+
+
+for (d in divs) {d.innerhtml = '';}

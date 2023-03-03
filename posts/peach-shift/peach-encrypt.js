@@ -26,16 +26,13 @@ function peachEncrypt(){
 }
 
 function printEncryptedMessage(message){
-  console.log('click');
   let encryptedTextArea = document.getElementById('encryptedMessage');
   let encryptedMessage = document.createTextNode(message);
-  console.log(encryptedMessage);
 
   if(encryptedTextArea.childNodes[0])
     encryptedTextArea.removeChild(encryptedTextArea.childNodes[0]);
 
   encryptedTextArea.appendChild(encryptedMessage);
-  console.log(encryptedTextArea);
 }
 
 /*
@@ -152,6 +149,6 @@ function printDecryptedMessageMobile(message){
 function copyTextArea(id){
   let copyText = document.getElementById(id);
   copyText.select();
-  copyText.setSelectionRange(0, 99999);
+  copyText.setSelectionRange(0, 99999); 
   document.execCommand("copy");
 }

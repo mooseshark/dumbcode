@@ -26,16 +26,13 @@ function peachEncrypt(){
 }
 
 function printEncryptedMessage(message){
-  console.log('click');
   let encryptedTextArea = document.getElementById('encryptedMessage');
   let encryptedMessage = document.createTextNode(message);
-  console.log(encryptedMessage);
 
   if(encryptedTextArea.childNodes[0])
     encryptedTextArea.removeChild(encryptedTextArea.childNodes[0]);
 
   encryptedTextArea.appendChild(encryptedMessage);
-  console.log(encryptedTextArea);
 }
 
 /*
