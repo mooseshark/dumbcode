@@ -102,7 +102,6 @@ function peachShift(ogString, convertedString){
 
 		drawPeachShiftTable(cell);
 
-		// finalConvertedString.push(String.fromCharCode(ogDecimalChar^inverseDecimalChar));
 		finalConvertedString.push(String.fromCharCode(ogDecimalChar^inverseDecimalChar));
 		convertedCount === convertedLen ? convertedCount = 0 : convertedCount++;
 	}

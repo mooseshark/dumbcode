@@ -56,11 +56,11 @@ function submitFields(){
 
 	if (w.style.display === "none") w.style.display = "table-row";
 	if (x.style.display === "none") x.style.display = "table-row";
-  if (y.style.display === "none") y.style.display = "table-row";
-  if (z.style.display === "none") z.style.display = "table-row";
+	if (y.style.display === "none") y.style.display = "table-row";
+	if (z.style.display === "none") z.style.display = "table-row";
 
-	ogStringDisplay.innerHTML = ogString;
-	covertedStringDisplay.innerHTML = peachShift(ogString, convertString);
+	ogStringDisplay.innerHTML = ogString.replaceAll('&','&amp;').replaceAll('>','&gt;').replaceAll('<','&lt;').replaceAll(`"`,'&quot;').replaceAll(`'`,'&#x27;');
+	covertedStringDisplay.innerHTML = peachShift(ogString, convertString).replaceAll('&','&amp;').replaceAll('>','&gt;').replaceAll('<','&lt;').replaceAll(`"`,'&quot;').replaceAll(`'`,'&#x27;');
 	submitButton.disabled = true;
 }
 
@@ -118,43 +118,43 @@ function drawPeachShiftTable(cell){
 	tableRow.id = cell.id;
 
 	let cell0 = tableRow.insertCell();
-  let text0 = document.createTextNode(cell.id + 1);
+  	let text0 = document.createTextNode(cell.id + 1);
 
-  let cell1 = tableRow.insertCell();
-  let text1 = document.createTextNode(cell.ogString);
+	let cell1 = tableRow.insertCell();
+	let text1 = document.createTextNode(cell.ogString);
 
 	let cell2 = tableRow.insertCell();
-  let text2 = document.createTextNode(cell.ogDecimalChar);
+  	let text2 = document.createTextNode(cell.ogDecimalChar);
 
 	let cell3 = tableRow.insertCell();
-  let text3 = document.createTextNode(cell.ogDecimalChar + ' ^ ' + cell.convertedDecimalChar);
+ 	let text3 = document.createTextNode(cell.ogDecimalChar + ' ^ ' + cell.convertedDecimalChar);
 
 	let cell4 = tableRow.insertCell();
 	let text4 = document.createTextNode(cell.convertedDecimalChar);
 
 	let cell5 = tableRow.insertCell();
-  let text5 = document.createTextNode(cell.convertedStringChar);
+  	let text5 = document.createTextNode(cell.convertedStringChar);
 
 	let cell6 = tableRow.insertCell();
-  let text6 = document.createTextNode(cell.ogBinary);
+  	let text6 = document.createTextNode(cell.ogBinary);
 
 	let cell7 = tableRow.insertCell();
 	let text7 = document.createTextNode(cell.convertedBinary);
 
 	let cell8 = tableRow.insertCell();
-  let text8 = document.createTextNode(cell.inverseBinary);
+  	let text8 = document.createTextNode(cell.inverseBinary);
 
 	let cell9 = tableRow.insertCell();
-  let text9 = document.createTextNode(cell.inverseDecimalChar);
+  	let text9 = document.createTextNode(cell.inverseDecimalChar);
 
 	let cell10 = tableRow.insertCell();
-  let text10 = document.createTextNode(cell.ogDecimalChar + ' ^ ' + cell.inverseDecimalChar);
+  	let text10 = document.createTextNode(cell.ogDecimalChar + ' ^ ' + cell.inverseDecimalChar);
 
 	let cell11 = tableRow.insertCell();
-  let text11 = document.createTextNode(cell.convertedStringChar);
+  	let text11 = document.createTextNode(cell.convertedStringChar);
 
 	cell0.appendChild(text0);
-  cell1.appendChild(text1);
+  	cell1.appendChild(text1);
 	cell2.appendChild(text2);
 	cell3.appendChild(text3);
 	cell4.appendChild(text4);
@@ -182,12 +182,12 @@ function resetPage(){
 	let ogStringLength = ogString.length;
 
 	if (a.style.display === "none") a.style.display = "table-row";
-  if (b.style.display === "none") b.style.display = "table-row";
+  	if (b.style.display === "none") b.style.display = "table-row";
 
 	if (w.style.display === "table-row") w.style.display = "none";
 	if (x.style.display === "table-row") x.style.display = "none";
-  if (y.style.display === "table-row") y.style.display = "none";
-  if (z.style.display === "table-row") z.style.display = "none";
+	if (y.style.display === "table-row") y.style.display = "none";
+	if (z.style.display === "table-row") z.style.display = "none";
 
 	ogStringDisplay.innerHTML = "";
 	covertedStringDisplay.innerHTML = "";
@@ -198,7 +198,7 @@ function resetPage(){
 
 	for(let i = 0; i < ogStringLength; i++){
 		let row = document.getElementById(i);
-    row.parentNode.removeChild(row);
+    	row.parentNode.removeChild(row);
 	}
 }
 
