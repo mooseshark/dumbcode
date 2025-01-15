@@ -103,11 +103,11 @@ pre {
   opacity: 0.75
 }
 
-.fa-twitter {
+.fa-bluesky {
   color: #ffffff
 }
 
-.fa-twitter:hover {
+.fa-bluesky:hover {
   color: #ffabab;
   opacity: 0.75
 }
@@ -194,7 +194,7 @@ pre {
  }
 
 /*
- * Twitter Icon
+ * bluesky Icon
  */
 .flex {
     -webkit-box-flex: 1;
@@ -235,23 +235,23 @@ pre {
 .btn.btn-rounded {
     border-radius: 50px;
 }
-.btn-outline-twitter {
+.btn-outline-bluesky {
     border: 1px solid #2caae1;
     color: #2caae1;
 }
 
-.btn-outline-twitter:hover {
+.btn-outline-bluesky:hover {
     background: #2caae1;
     color: #ffffff;
 }
 
-.btn-twitter {
+.btn-bluesky {
     background: #2caae1;
     color: #ffffff;
 }
 
-.btn-twitter:hover,
-.btn-twitter:focus {
+.btn-bluesky:hover,
+.btn-bluesky:focus {
     background: #1b8dbf;
     color: #ffffff;
 }
